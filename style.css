@@ -20,7 +20,6 @@ header {
 .nav-items {
   display: flex;
   gap: 10px;
-  font-style: normal;
 }
 
 a {
@@ -29,7 +28,7 @@ a {
 }
 
 h1 {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 48px;
   line-height: 55px;
   letter-spacing: 0.37px;
@@ -51,7 +50,7 @@ main {
   justify-content: center;
   flex-direction: column;
   border-bottom-left-radius: 150px;
-  background-size: contain;
+  background-size: cover;
 }
 
 section {
