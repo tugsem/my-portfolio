@@ -28,6 +28,13 @@ a {
   color: #091e42;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.37px;
+}
+
 .bright-color {
   background-color: #fff;
 }
