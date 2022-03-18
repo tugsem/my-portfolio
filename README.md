@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Tuğsem Saranlı**
 
 - GitHub: [@tugsem](https://github.com/tugsem)
 - Twitter: [@TugsemSaranli](https://twitter.com/TugsemSaranli)

@@ -3,22 +3,18 @@
   padding: 0;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-}
-
 body {
   color: #091e42;
   background-color: #f7f7f9;
   font-family: 'Poppins', sans-serif;
-  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 header {
   position: absolute;
-  display: flex;
-  align-items: center;
   background-color: #fff;
   width: 375px;
   height: 48px;
@@ -49,7 +45,7 @@ header {
   box-sizing: border-box;
 }
 
-h1 {
+#title {
   position: static;
   width: 327px;
   height: 150px;
@@ -59,7 +55,7 @@ h1 {
   line-height: 52px;
 }
 
-p {
+#description {
   position: static;
   width: 327px;
   height: 146px;
@@ -90,17 +86,18 @@ p {
   height: 24px;
   left: 24px;
   top: 434px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 2;
   flex-grow: 0;
 }
 
-.about-me {
+main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
   position: absolute;
   background-image: url("header-shapes.png");
   background-repeat: no-repeat;
