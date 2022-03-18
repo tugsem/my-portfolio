@@ -34,8 +34,6 @@ To get a local copy up and running follow these simple example steps.
 - Run linters to be sure everything set up properly.
 
 
-
-
 ## Authors
 
 👤 **Author1**
@@ -44,4 +42,7 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@TugsemSaranli](https://twitter.com/TugsemSaranli)
 - LinkedIn: [Tugsem Saranli](https://linkedin.com/in/tugsem-saranli-5b2a98230/)
 
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
 
