@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #091e42;
+  background-color: #f7f7f9;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  position: absolute;
+  background-color: #fff;
+  width: 375px;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+#hamburger-btn {
+  box-sizing: border-box;
+  position: absolute;
+  background-image: url("Union.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 19px 19px 0 0;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+}
+
+#logo {
+  left: 24px;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+#title {
+  position: static;
+  width: 327px;
+  height: 150px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+#description {
+  position: static;
+  width: 327px;
+  height: 146px;
+  left: 24px;
+  top: 276px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.connect {
+  color: #6070ff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  position: static;
+  width: 117px;
+  height: 24px;
+  left: 24px;
+  top: 434px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me {
+  position: absolute;
+  background-image: url("header-shapes.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: cover;
+  border-bottom-left-radius: 55px;
+  top: 48px;
+  width: 375px;
+  padding: 114px 0 24px 24px;
+  box-sizing: border-box;
+}
+
+.icons {
+  /* top: 470px; */
+  list-style: none;
+  gap: 10px;
+  width: 170px;
+  height: 20px;
+  position: static;
+  padding-bottom: 114px;
+  box-sizing: border-box;
+  display: flex;
+  order: 3;
+  margin: 12px 0;
+}
