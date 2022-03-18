@@ -1,70 +1,62 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  /* position: relative; */
-  background-color: #f7f7f9;
-  font-family: 'Poppins', sans-serif;
-
-  /* width: 375px;
-  height: 5410px;
-  left: 11282px;
-  top: -1883px; */
+  display: flex;
+  justify-content: center;
 }
 
 body {
   color: #091e42;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #f7f7f9;
+  font-family: 'Poppins', sans-serif;
+  width: 375px;
 }
 
 header {
   position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
   width: 375px;
   height: 48px;
+  box-sizing: border-box;
 }
 
 #hamburger-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
+  box-sizing: border-box;
   position: absolute;
-  right: 24px;
+  background-image: url("Union.png");
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 8px;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 19px 19px 0 0;
+  right: 24px;
+  width: 40px;
+  height: 40px;
 }
 
-.logo {
-  width: 100px;
-  height: 40px;
-  left: 12px;
-  padding: 10px 12px;
+#logo {
+  left: 24px;
+  padding: 14px 0;
   display: flex;
-  flex-direction: row;
   align-items: center;
   position: absolute;
+  box-sizing: border-box;
 }
 
 h1 {
   position: static;
   width: 327px;
   height: 150px;
-  left: 24px;
-  top: 114px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 12px 0;
 }
 
 p {
@@ -88,6 +80,7 @@ p {
 }
 
 .connect {
+  color: #6070ff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -103,35 +96,33 @@ p {
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0;
 }
 
-.bright-color {
-  background-color: #fff;
-}
-
-.purple {
-  color: #6070ff;
-}
-
-main {
-  /* display: flex;
+.about-me {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start; */
-  padding: 114px 24px;
-  background-image: url("Header\ bg@2x.png");
-  background-size: cover;
   position: absolute;
-  width: 375px;
-  height: 604px;
+  background-image: url("header-shapes.png");
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-size: cover;
+  border-bottom-left-radius: 55px;
   top: 48px;
+  width: 375px;
+  padding: 114px 0 24px 24px;
+  box-sizing: border-box;
 }
 
 .icons {
-  display: flex;
+  /* top: 470px; */
+  list-style: none;
   gap: 10px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  width: 170px;
+  height: 20px;
   position: static;
+  padding-bottom: 114px;
+  box-sizing: border-box;
+  display: flex;
+  order: 3;
+  margin: 12px 0;
 }
