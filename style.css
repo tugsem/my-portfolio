@@ -103,6 +103,7 @@ header {
   width: 375px;
   padding: 114px 0 100px 24px;
   box-sizing: border-box;
+  margin-bottom: 114px;
 
   /* min-height: 100vh; */
 }
@@ -127,14 +128,15 @@ header {
 .works {
   display: grid;
   grid-column: 2/3;
-  top: 114px;
+
+  /* top: 114px; */
   padding: 16px 16px 28px 16px;
   box-sizing: border-box;
   width: 327px;
   background-color: #fff;
   border-radius: 16px;
   border: 1px solid #dfe1e6;
-  margin: 88px 24px;
+  margin-bottom: 114px;
 }
 
 .snapshoots {
