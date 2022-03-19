@@ -269,31 +269,49 @@ header {
   font-size: 15px;
   line-height: 20px;
   width: 303px;
-  height: 66.72px;
-  top: 12px;
+
+  /* height: 66.72px; */
+
+  /* top: 12px;
   left: 12px;
+  right: 12px; */
   background: #f7f7f9;
   border-radius: 8px;
-  margin: 12px 12px;
+  margin: 12px 0 12px 0;
   box-sizing: border-box;
   padding: 8px;
   gap: 16px;
   color: #253858;
 }
 
+.techlist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  /* margin-top:18px; */
+}
+
 .dropdown {
-  position: static;
   width: 327px;
-  height: 72px;
   color: #000;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+
+  /* line-height: 24px; */
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #dfe1e6;
-  padding: 24px 78px 24px 12px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
   box-sizing: border-box;
+}
+
+.bottom {
+  border-bottom: 1px solid #dfe1e6;
+  box-sizing: border-box;
+
+  /* padding: 20px; */
 }
 
 .contact {
@@ -355,14 +373,6 @@ header {
 
 .white:hover {
   background-color: #b9b9b9;
-}
-
-.techlist {
-  list-style: none;
-}
-
-.languageswwithlogos {
-  list-style: none;
 }
 
 #about-description {
