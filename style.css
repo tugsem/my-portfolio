@@ -81,15 +81,11 @@ header {
 
 .connect {
   color: #6070ff;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: flex-start; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
   padding: 0;
-  position: static;
-  width: 117px;
-  height: 24px;
-  left: 24px;
   margin: 16px 0;
   font-weight: 500;
   font-size: 16px;
@@ -124,7 +120,13 @@ header {
   margin: 12px 0;
 }
 
+.grid-container {
+  display: grid;
+}
+
 .works {
+  display: grid;
+  grid-column: 2/3;
   top: 114px;
   padding: 16px 16px 28px 16px;
   box-sizing: border-box;
@@ -136,7 +138,6 @@ header {
 }
 
 .snapshoots {
-  position: static;
   border-radius: 8px;
 }
 
@@ -175,6 +176,7 @@ header {
 }
 
 .languages {
+  list-style: none;
   display: flex;
   align-items: center;
   width: 203px;
@@ -239,6 +241,9 @@ header {
 }
 
 .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 114px 0 113px 24px;
   background-color: #fff;
   border-top-right-radius: 55px;
@@ -348,4 +353,16 @@ header {
 
 .white:hover {
   background-color: #b9b9b9;
+}
+
+.techlist {
+  list-style: none;
+}
+
+.languageswwithlogos {
+  list-style: none;
+}
+
+#about-description {
+  padding-right: 24px;
 }
