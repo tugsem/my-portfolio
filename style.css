@@ -171,7 +171,6 @@ header {
   font-size: 15px;
   line-height: 24px;
   width: 295px;
-  height: 76px;
   top: 92px;
   margin: 12px 0;
   position: static;
@@ -179,17 +178,12 @@ header {
 
 .languages {
   list-style: none;
-  display: flex;
-  align-items: center;
-  width: 203px;
-  height: 24px;
-  top: 180px;
   gap: 8px;
-  position: static;
-  margin: 12px 0;
+  margin: 12px -5px;
 }
 
 .lang {
+  float: left;
   color: #6070ff;
   font-weight: 500;
   font-size: 12px;
@@ -202,6 +196,7 @@ header {
   height: 24px;
   background-color: #ebebff;
   border-radius: 8px;
+  margin: 0px 5px;
 }
 
 .detail-btn {
