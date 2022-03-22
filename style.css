@@ -70,9 +70,6 @@ header {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -94,7 +91,7 @@ header {
 
 .main {
   position: static;
-  background-image: url("header-shapes.png");
+  background-image: url("/assets/header-shapes.png");
   background-repeat: no-repeat;
   background-color: #fff;
   background-size: cover;
