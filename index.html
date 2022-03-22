@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +7,9 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="bright-color">
-        <a id="logo"><img src="/assets/Logo.png" alt="my logo"></a>
+        <a id="logo"><img src="assets/Logo.png" alt="my logo"></a>
         <button type="button" id="hamburger-btn"></button>
     </header>
     <article class="main">
@@ -142,18 +140,18 @@
             <li class="dropdown bottom">Skills</li>
         </ul>
     </section>
-    <footer class="contact">
+    <section class="contact">
         <h2 id="contact-me-title">Contact Me</h2>
         <p id="cont-desc">If you have an application you are interested in developing, a feature that you need built or
             a project that needs coding. I’d love to help with it </p>
-        <form>
-            <input name="name" class="txt" required max="20" type="text" value="Yeremias">
-            <input name="email" class="txt" required type="email" value="natajayanj14@gmail.com">
+        <form action="https://formspree.io/f/mbjwkeyy" method="POST">
+            <input type="text" name="name" class="txt"  maxlength="30"  placeholder="Your name" required>
+            <input type="email" name="email" class="txt"   placeholder="Email" required>
             <textarea name="message" required maxlength="500" id="txtarea"
                 placeholder="Write your message here"></textarea>
             <button type="submit" class="detail-btn white"> Get It Touch</button>
         </form>
-    </footer>
+    </section>
 </body>
 
 </html>
