@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-html {
+/* html {
   min-height: 100vh;
-}
+} */
 
 body {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,7 +94,6 @@ button#hamburger-btn {
   top: 48px;
   width: 100%;
   padding: 114px 24px 114px 24px;
-  box-sizing: border-box;
   margin: 0 0 114px 0;
   display: flex;
   flex-direction: column;
@@ -104,16 +103,12 @@ button#hamburger-btn {
   list-style: none;
   gap: 20px;
   width: 170px;
-  box-sizing: border-box;
   display: flex;
   margin: 12px 0;
 }
 
 .work {
-  /* display: grid;
-  grid-column: 2/3; */
   padding: 16px 16px 28px 16px;
-  box-sizing: border-box;
   width: 327px;
   background-color: #fff;
   border-radius: 16px;
@@ -220,7 +215,6 @@ button#hamburger-btn {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  width: 100px;
   margin-bottom: 12px;
 }
 

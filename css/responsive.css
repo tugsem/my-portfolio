@@ -1,14 +1,12 @@
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
     overflow-x: hidden;
   }
 
   .main {
     background-image: url("../assets/desktopbg.png");
     background-size: contain;
-    background-position-x: center;
     padding: 200px 260px 200px 260px;
     width: 100%;
     margin: 48px 0 114px 0;
@@ -18,7 +16,7 @@
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
-    padding-right: 340px;
+    width: 430px;
   }
 
   #main-description {
@@ -27,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
 
   header {
@@ -61,7 +60,8 @@
 
   .grid-container {
     display: grid;
-    gap: 114px;
+    row-gap: 114px;
+    place-items: center;
     grid-template-columns: 142px auto 142px;
   }
 
@@ -70,9 +70,13 @@
     place-self: center;
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 0 142px;
     width: fit-content;
     padding: 24px;
+  }
+
+  .right {
+    flex-direction: row-reverse;
   }
 
   .big-img {
