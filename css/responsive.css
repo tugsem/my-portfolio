@@ -1,6 +1,5 @@
 @media all and (min-width: 768px) {
   body {
-    /* max-width: 1440px; */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -19,7 +18,7 @@
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
-    padding-right: 350px;
+    padding-right: 340px;
   }
 
   #main-description {
