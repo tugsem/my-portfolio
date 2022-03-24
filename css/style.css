@@ -13,12 +13,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   color: #091e42;
   background-color: #f7f7f9;
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-
 }
 
 header {
@@ -47,8 +45,6 @@ button#hamburger-btn {
   background-color: transparent;
   width: 40px;
   height: 40px;
-
-
 }
 
 #logo {
@@ -60,6 +56,7 @@ button#hamburger-btn {
 
 #first-title {
   /* width: 327px; */
+
   /* height: 150px; */
   width: 100%;
   float: left;
@@ -74,7 +71,7 @@ button#hamburger-btn {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin: 12px 0px;
+  margin: 12px 0;
   width: 100%;
 }
 
@@ -101,7 +98,7 @@ button#hamburger-btn {
   width: 100%;
   padding: 114px 24px 114px 24px;
   box-sizing: border-box;
-  margin: 0px 0px 114px 0px;
+  margin: 0 0 114px 0;
   display: flex;
   flex-direction: column;
 }
@@ -114,7 +111,6 @@ button#hamburger-btn {
   display: flex;
   margin: 12px 0;
 }
-
 
 .work {
   /* display: grid;
@@ -340,4 +336,3 @@ button#hamburger-btn {
   background: #4017cc;
   color: #fff;
 }
-
