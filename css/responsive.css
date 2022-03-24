@@ -1,6 +1,4 @@
 @media screen and (min-width: 768px) {
-
-
   .main {
     background-image: url("../assets/desktopbg.png");
     background-size: contain;
@@ -58,7 +56,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 114px 0px;
+    margin: 114px 0;
     padding: 24px;
   }
 
@@ -74,23 +72,27 @@
   .info {
     display: flex;
     flex-direction: column;
+
     /* width: 544px; */
     width: 50%;
-    padding: 24px 22px 0px 22px;
+    padding: 24px 22px 0 22px;
   }
+
   .work-title {
     /* width: 496px; */
     font-size: 40px;
     line-height: 52px;
-
   }
+
   .sub-desc {
     width: 100%;
   }
+
   .description {
     /* width: 496px; */
     width: 100%;
   }
+
   .about-me {
     width: 100%;
     display: flex;
