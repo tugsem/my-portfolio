@@ -5,7 +5,7 @@
     background-position: center;
     padding: 255px 260px 255px 260px;
     width: 100%;
-    margin: 0;
+    margin-bottom: 114px;
   }
 
   #first-title {
@@ -56,7 +56,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 114px 0;
+    margin-bottom: 114px;
     padding: 24px;
   }
 
@@ -72,14 +72,11 @@
   .info {
     display: flex;
     flex-direction: column;
-
-    /* width: 544px; */
     width: 50%;
     padding: 24px 22px 0 22px;
   }
 
   .work-title {
-    /* width: 496px; */
     font-size: 40px;
     line-height: 52px;
   }
@@ -89,7 +86,6 @@
   }
 
   .description {
-    /* width: 496px; */
     width: 100%;
   }
 
@@ -98,7 +94,6 @@
     display: flex;
     flex-direction: row;
     padding: 142px;
-    margin-top: 114px;
   }
 
   .left-side {

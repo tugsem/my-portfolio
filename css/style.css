@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   width: 100%;
   color: #091e42;
@@ -32,7 +33,7 @@ button#hamburger-btn {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
-  border-color: transparent;
+  border: none;
   background-color: transparent;
   width: 40px;
   height: 40px;
@@ -97,7 +98,6 @@ button#hamburger-btn {
   display: flex;
   margin: 12px 0;
 }
-
 .grid-container {
   padding: 0 24px;
   display: grid;
@@ -131,8 +131,6 @@ button#hamburger-btn {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-
-  /* height: 32px; */
   margin: 12px 0;
   gap: 8px;
   font-weight: 600;
@@ -206,7 +204,6 @@ button#hamburger-btn {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   /* align-items: flex-start; */
   justify-content: center;
   padding: 114px 24px 113px 24px;
@@ -230,7 +227,6 @@ button#hamburger-btn {
 
 .techlist {
   list-style: none;
-
   /* display: flex;
   flex-direction: column; */
   width: 100%;
