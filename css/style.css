@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   width: 100%;
   color: #091e42;
@@ -98,6 +97,7 @@ button#hamburger-btn {
   display: flex;
   margin: 12px 0;
 }
+
 .grid-container {
   padding: 0 24px;
   display: grid;
@@ -204,6 +204,7 @@ button#hamburger-btn {
   width: 100%;
   display: flex;
   flex-direction: column;
+
   /* align-items: flex-start; */
   justify-content: center;
   padding: 114px 24px 113px 24px;
@@ -227,6 +228,7 @@ button#hamburger-btn {
 
 .techlist {
   list-style: none;
+
   /* display: flex;
   flex-direction: column; */
   width: 100%;
