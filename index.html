@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header class="bright-color">
-        <a id="logo"><img src="assets/Logo.png" alt="my logo"></a>
+    <header>
+        <a id="logo"><img src="./assets/Logo.png" alt="my logo"></a>
         <button type="button" id="hamburger-btn"></button>
+        <ul class="nav-hidden">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </header>
     <article class="main">
-        <h1 id="first-title">I'm Tuğsem <br>Glad to see <br>you!</h1>
+        <h1 id="first-title">I'm Tuğsem Glad to see you!</h1>
         <p id="main-description">I’m a software developer! I can help you build a product , feature or website Look
             through some of my work and experience! If you like what you see and have a project you need coded, don’t
             hestiate to contact me.</p>
@@ -27,95 +33,104 @@
         </ul>
     </article>
     <section class="grid-container">
-
-        <section class="works">
-            <a class="snapshoots"><img src="./assets/Snapshoot1.png" width="295" height="220" alt="snapshoot1"></a>
-            <h2 class="work-title">Tonic</h2>
-            <section class="sub-desc">
-                <h5 class="brand">CANOPY</h5>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="stack">Back End Dev</p>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="year">2015</p>
-            </section>
-            <p class="description">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="languages">
-                <li class="lang">html</li>
-                <li class="lang">css</li>
-                <li class="lang">javascript</li>
-            </ul>
-            <button type="button" class="detail-btn">See Project</button>
+        <section class="work">
+            <img class="img-work" src="./assets/Snapshoot1.png" alt="Snapshoot1">
+            <div class="info">
+                <h2 class="work-title">Tonic</h2>
+                <div class="sub-desc">
+                    <h5 class="brand">CANOPY</h5>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="stack">Back End Dev</p>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="year">2015</p>
+                </div>
+                <p class="description">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="languages">
+                    <li class="lang">html</li>
+                    <li class="lang">css</li>
+                    <li class="lang">javascript</li>
+                </ul>
+                <button type="button" class="detail-btn"><b>See Project</b></button>    
+            </div>
         </section>
 
-        <section class="works">
-            <a class="snapshoots"><img src="./assets/Snapshoot2.png" alt="Snaphoot2"></a>
-            <h2 class="work-title">Multi-Post <br>Stories</h2>
-            <section class="sub-desc">
-                <h5 class="brand">CANOPY</h5>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="stack">Back End Dev</p>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="year">2015</p>
-            </section>
-            <p class="description">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="languages">
-                <li class="lang">html</li>
-                <li class="lang">css</li>
-                <li class="lang">javascript</li>
-            </ul>
-            <button type="button" class="detail-btn">See Project</button>
+        <section class="work right">
+            <img class="img-work" src="./assets/Snapshoot2.png" alt="Snapshoot2">
+            <div class="info">
+                <h2 class="work-title">Multi-Post Stories</h2>
+                <div class="sub-desc">
+                    <h5 class="brand">FACEBOOK</h5>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="stack">Back End Dev</p>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="year">2015</p>
+                </div>
+                <p class="description">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="languages">
+                    <li class="lang">html</li>
+                    <li class="lang">Ruby on rails</li>
+                    <li class="lang">css</li>
+                    <li class="lang">javascript</li>
+                </ul>
+                <button type="button" class="detail-btn"><b>See Project</b></button>    
+            </div>
         </section>
 
-        <section class="works">
-            <a class="snapshoots"><img src="./assets/Snapshoot3.png" alt="Snapshoot3"></a>
-            <h2 class="work-title">Tonic</h2>
-            <section class="sub-desc">
-                <h5 class="brand">CANOPY</h5>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="stack">Back End Dev</p>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="year">2015</p>
-            </section>
-            <p class="description">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="languages">
-                <li class="lang">html</li>
-                <li class="lang">css</li>
-                <li class="lang">javascript</li>
-            </ul>
-            <button type="button" class="detail-btn">See Project</button>
+        <section class="work">
+            <img class="img-work" src="./assets/Snapshoot3.png" alt="Snapshoot3">
+            <div class="info">
+                <h2 class="work-title">Tonic</h2>
+                <div class="sub-desc">
+                    <h5 class="brand">CANOPY</h5>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="stack">Back End Dev</p>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="year">2015</p>
+                </div>
+                <p class="description">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="languages">
+                    <li class="lang">html</li>
+                    <li class="lang">css</li>
+                    <li class="lang">javascript</li>
+                </ul>
+                <button type="button" class="detail-btn"><b>See Project</b></button>    
+            </div>
         </section>
 
-        <section class="works">
-            <a class="snapshoots"><img src="./assets/Snapshoot4.png" alt="Snapshoot4"></a>
-            <h2 class="work-title">Multi-Post <br> Stories</h2>
-            <section class="sub-desc">
-                <h5 class="brand">CANOPY</h5>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="stack">Back End Dev</p>
-                <img src="./assets/Counter.png" alt="dot">
-                <p class="year">2015</p>
-            </section>
-            <p class="description">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-            </p>
-            <ul class="languages">
-                <li class="lang">html</li>
-                <li class="lang">css</li>
-                <li class="lang">javascript</li>
-            </ul>
-            <button type="button" class="detail-btn">See Project</button>
+        <section class="work right">
+            <img class="img-work" src="./assets/Snapshoot4.png" alt="Snapshoot4">
+            <div class="info">
+                <h2 class="work-title">Multi-Post Stories</h2>
+                <div class="sub-desc">
+                    <h5 class="brand">CANOPY</h5>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="stack">Back End Dev</p>
+                    <img src="./assets/Counter.png" alt="dot">
+                    <p class="year">2015</p>
+                </div>
+                <p class="description">
+                    A daily selection of privately personalized reads; no accounts or sign-ups required.
+                </p>
+                <ul class="languages">
+                    <li class="lang">html</li>
+                    <li class="lang">css</li>
+                    <li class="lang">javascript</li>
+                </ul>
+                <button type="button" class="detail-btn"><b>See Project</b></button>    
+            </div>
+    
         </section>
-
     </section>
     <section class="about-me">
-        <h2 class="about-myself-title">About Myself</h2>
-        <p id="about-description">Hello I’m a software developer! I can help you build a product , feature or website
+        <section class="left-side">
+            <h2 class="about-myself-title">About <br>Myself</h2>
+            <p id="about-description">Hello I’m a software developer! I can help you build a product , feature or website
             Look through some of my work and experience! If you like what you see and have a project you need coded,
             don’t hestiate to contact me.</p>
         <h4 class="connect">LET'S CONNECT</h4>
@@ -126,20 +141,24 @@
             <li><a href="#"><img src="./assets/github.svg" alt="github"></a></li>
             <li><a href="#"><img src="./assets/Vector2.svg" alt="Angellist"></a></li>
         </ul>
-        <button type="button" class="detail-btn">Get My Resume</button>
-        <ul class="techlist">
-            <li class="dropdown"> Languages
-                <ul class="lang-subs">
-                    <li class="grey-background"><img src="./assets/js.png" alt="js" width="48" height="48">JavaScript
-                    </li>
-                    <li class="grey-background"><img src="./assets/html.png" alt="html" width="48" height="48">HTML</li>
-                    <li class="grey-background"><img src="./assets/css.png" alt="css" width="48" height="48">CSS</li>
-                </ul>
-            </li>
-            <li class="dropdown bottom">Frameworks</li>
-            <li class="dropdown bottom">Skills</li>
-        </ul>
+        <button type="button" class="detail-btn"><b>Get My Resume</b></button>
+        </section>
+        
+            <ul class="techlist">
+                <li class="dropdown"> Languages
+                    <ul class="lang-subs">
+                        <li class="grey-background"><img src="./assets/js.png" alt="js" width="48" height="48">JavaScript
+                        </li>
+                        <li class="grey-background"><img src="./assets/html.png" alt="html" width="48" height="48">HTML</li>
+                        <li class="grey-background"><img src="./assets/css.png" alt="css" width="48" height="48">CSS</li>
+                    </ul>
+                </li>
+                <li class="dropdown bottom">Frameworks</li>
+                <li class="dropdown bottom">Skills</li>
+            </ul>
+        
     </section>
+
     <footer class="contact">
         <h2 id="contact-me-title">Contact Me</h2>
         <p id="cont-desc">If you have an application you are interested in developing, a feature that you need built or
@@ -149,7 +168,7 @@
             <input type="email" name="email" class="txt"   placeholder="Email" required>
             <textarea name="message" required maxlength="500" id="txtarea"
                 placeholder="Write your message here"></textarea>
-            <button type="submit" class="detail-btn white"> Get It Touch</button>
+            <button type="submit" class="detail-btn white"><b>Get It Touch</b></button>
         </form>
     </footer>
 </body>
