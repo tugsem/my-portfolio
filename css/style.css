@@ -125,6 +125,7 @@ button#hamburger-btn {
   transform: rotateY(180deg);
   transform: scale(1.1);
 }
+
 .work-title {
   color: #172b4d;
   font-weight: 700;
@@ -192,15 +193,13 @@ button#hamburger-btn {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 12px 0;
-  max-width: fit-content;
-
+  width: fit-content;
 }
 
 .detail-btn:hover {
   background-color: #6070ff;
   color: #fff;
   transform: rotateY(180deg);
-  
 }
 
 .brand {
