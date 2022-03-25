@@ -18,6 +18,7 @@ header {
   height: 48px;
   display: flex;
   align-items: center;
+  animation-name: header;
 }
 
 .nav-hidden {
@@ -52,6 +53,10 @@ button#hamburger-btn {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  animation-duration: 3s;
+  animation-name: heading;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 #main-description {
@@ -117,6 +122,12 @@ button#hamburger-btn {
   border-radius: 8px;
   width: 100%;
   margin: 6px 0;
+  transition: all 2s;
+}
+
+.img-work:hover {
+  transform: rotateY(180deg);
+  transform: scale(1.1);
 }
 
 .work-title {
@@ -171,6 +182,7 @@ button#hamburger-btn {
 
 .detail-btn {
   cursor: pointer;
+  transition: all 1s;
   color: #396df2;
   padding: 12px;
   display: flex;
@@ -191,6 +203,7 @@ button#hamburger-btn {
 .detail-btn:hover {
   background-color: #6070ff;
   color: #fff;
+  transform: rotateY(180deg);
 }
 
 .brand {
@@ -228,9 +241,6 @@ button#hamburger-btn {
 
 .techlist {
   list-style: none;
-
-  /* display: flex;
-  flex-direction: column; */
   width: 100%;
 }
 
@@ -327,4 +337,16 @@ button#hamburger-btn {
 .white:active {
   background: #4017cc;
   color: #fff;
+}
+
+@keyframes heading {
+  from {
+    margin-left: -100%;
+    width: auto;
+  }
+
+  to {
+    margin-left: 0%;
+    width: auto;
+  }
 }
