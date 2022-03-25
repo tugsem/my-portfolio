@@ -53,6 +53,10 @@ button#hamburger-btn {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  animation-duration: 3s;
+  animation-name: heading;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
 }
 
 #main-description {
@@ -333,4 +337,16 @@ button#hamburger-btn {
 .white:active {
   background: #4017cc;
   color: #fff;
+}
+
+@keyframes heading {
+  from {
+    margin-left: -100%;
+    width: auto;
+  }
+
+  to {
+    margin-left: 0%;
+    width: auto;
+  }
 }
