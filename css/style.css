@@ -18,6 +18,7 @@ header {
   height: 48px;
   display: flex;
   align-items: center;
+  animation-name: header;
 }
 
 .nav-hidden {
@@ -117,8 +118,13 @@ button#hamburger-btn {
   border-radius: 8px;
   width: 100%;
   margin: 6px 0;
+  transition: all 2s;
 }
 
+.img-work:hover {
+  transform: rotateY(180deg);
+  transform: scale(1.1);
+}
 .work-title {
   color: #172b4d;
   font-weight: 700;
@@ -171,6 +177,7 @@ button#hamburger-btn {
 
 .detail-btn {
   cursor: pointer;
+  transition: all 1s;
   color: #396df2;
   padding: 12px;
   display: flex;
@@ -185,12 +192,15 @@ button#hamburger-btn {
   line-height: 24px;
   letter-spacing: 0.03em;
   margin: 12px 0;
-  width: fit-content;
+  max-width: fit-content;
+
 }
 
 .detail-btn:hover {
   background-color: #6070ff;
   color: #fff;
+  transform: rotateY(180deg);
+  
 }
 
 .brand {
@@ -228,9 +238,6 @@ button#hamburger-btn {
 
 .techlist {
   list-style: none;
-
-  /* display: flex;
-  flex-direction: column; */
   width: 100%;
 }
 
