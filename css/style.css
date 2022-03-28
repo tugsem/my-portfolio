@@ -281,7 +281,7 @@ button#hamburger-btn {
   display: flex;
   flex-direction: column;
   background-color: #6070ff;
-  background-image: url("/assets/contactshapes.png");
+  background-image: url("../assets/contactshapes.png");
   background-position-x: right;
   background-repeat: no-repeat;
   background-size: contain;
