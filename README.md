@@ -13,6 +13,9 @@
 - Linters(Lighthouse, Webhint, Stylelint)
 - VS Code
 
+## Live Demo 
+
+[Live Demo Link](https://tugsem.github.io/my-portfolio/)
 
 ## Getting Started
 
