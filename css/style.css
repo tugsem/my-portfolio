@@ -6,7 +6,9 @@
 
 body {
   width: 100%;
-  color: #091e42;
+
+  /* color: #091e42; */
+  color: #000;
   background-color: #f7f7f9;
   font-family: 'Poppins', sans-serif;
 }
