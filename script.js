@@ -4,8 +4,7 @@ const navMenu = document.querySelector('.nav-menu');
 const mainSection = document.querySelector('.main');
 const bodyElement = document.querySelector('body');
 
-
-hamburger.addEventListener('click', ()=> {
+hamburger.addEventListener('click', () => {
   mainSection.classList.add('active');
   bodyElement.classList.add('active');
   navMenu.classList.add('active');
@@ -24,4 +23,3 @@ document.querySelectorAll('.mobile-menu > li').forEach((link) => {
     bodyElement.classList.remove('active');
   });
 });
-
