@@ -31,7 +31,7 @@ button#hamburger-btn {
   cursor: pointer;
   right: 36px;
   position: absolute;
-  background-image: url("../assets/Union.png");
+  background-image: url('../assets/Union.png');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
@@ -84,7 +84,7 @@ button#hamburger-btn {
 }
 
 .main {
-  background-image: url("../assets/header-shapes.png");
+  background-image: url('../assets/header-shapes.png');
   background-repeat: no-repeat;
   background-color: #fff;
   background-size: cover;
@@ -283,7 +283,7 @@ button#hamburger-btn {
   display: flex;
   flex-direction: column;
   background-color: #6070ff;
-  background-image: url("../assets/contactshapes.png");
+  background-image: url('../assets/contactshapes.png');
   background-position-x: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -353,12 +353,15 @@ button#hamburger-btn {
   }
 }
 
+.main.active {
+  filter: blur(4px);
+}
 
 #exit-btn {
   cursor: pointer;
   right: 36px;
   position: absolute;
-  background-image: url("../assets/cancel.svg");
+  background-image: url('../assets/cancel.svg');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
@@ -374,11 +377,14 @@ button#hamburger-btn {
 
 .nav-menu.active {
   display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #6070ff;
   opacity: 0.9;
   width: 100%;
-  height: 100vh;
-  
+  height: 100%;
+  z-index: 99;
 }
 
 .mobile-menu {
@@ -388,11 +394,17 @@ button#hamburger-btn {
   gap: 40px;
   justify-content: space-between;
   list-style-type: none;
+  opacity: 0.9;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 .mobile-menu > li > a {
   color: #fff;
   font-size: 32px;
   text-decoration: none;
-  
+}
+
+body.active {
+  overflow-y: hidden;
 }
