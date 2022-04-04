@@ -22,6 +22,6 @@ document.querySelectorAll('.mobile-menu > li').forEach((link) => {
     navMenu.classList.remove('active');
     mainSection.classList.remove('active');
     bodyElement.classList.remove('active');
-  })
-})
+  });
+});
 
