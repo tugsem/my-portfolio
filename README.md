@@ -8,6 +8,7 @@
 
 - HTML
 - CSS
+- Javascript
 - Figma
 - Node
 - Linters(Lighthouse, Webhint, Stylelint)
