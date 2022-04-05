@@ -384,7 +384,7 @@ button#hamburger-btn {
   opacity: 0.9;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  z-index: 1;
 }
 
 .mobile-menu {
@@ -407,4 +407,98 @@ button#hamburger-btn {
 
 body.active {
   overflow-y: hidden;
+}
+
+#popup-overlay {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(193, 199, 208, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  display: none;
+}
+
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #fff;
+  width: 343px;
+  z-index: 3;
+  padding: 18px 16px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+#close-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 35px;
+  color: #67798e;
+}
+
+#popup-content h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #172b4d;
+  width: 70%;
+}
+
+#popup-description {
+  font-size: 15px;
+  color: #344563;
+  margin-top: 10px;
+}
+
+#popup-img {
+  width: 311px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#live-btn img,
+#source-btn img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+#live-btn,
+#source-btn {
+  text-decoration: none;
+  font-size: 15px;
+  color: #6070ff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+}
+
+#popup-overlay.active {
+  display: block;
+}
+
+#popup-content.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.project-info .languages {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ebecf0;
 }
