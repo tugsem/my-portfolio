@@ -128,6 +128,7 @@ document.querySelectorAll('.mobile-menu > li').forEach((link) => {
 function showError(message) {
   msg.innerText = message;
   msg.className = 'error';
+  email.classList.add('active');
 }
 
 function validateEmail(email, EMAIL_INVALID) {

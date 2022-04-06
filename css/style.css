@@ -504,3 +504,19 @@ body.active {
   padding-bottom: 20px;
   border-bottom: 1px solid #ebecf0;
 }
+
+.error {
+  font-size: 15px;
+  color: #9d0208;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  align-self: flex-start;
+}
+
+#email.active {
+  color: #9d0208;
+  border: 2px solid #9d0208;
+  margin-bottom: 0;
+}
