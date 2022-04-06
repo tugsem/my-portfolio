@@ -184,7 +184,8 @@ button#hamburger-btn {
 
 .detail-btn {
   cursor: pointer;
-  transition: all 1s;
+
+  /* transition: all 1s; */
   color: #396df2;
   padding: 12px;
   display: flex;
@@ -205,7 +206,8 @@ button#hamburger-btn {
 .detail-btn:hover {
   background-color: #6070ff;
   color: #fff;
-  transform: rotateY(180deg);
+
+  /* transform: rotateY(180deg); */
 }
 
 .brand {
