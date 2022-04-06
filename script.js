@@ -125,7 +125,7 @@ document.querySelectorAll('.mobile-menu > li').forEach((link) => {
   });
 });
 
-function showError(message) {
+function showError(email, message) {
   msg.innerText = message;
   msg.className = 'error';
   email.classList.add('active');
@@ -133,7 +133,7 @@ function showError(message) {
 
 function validateEmail(email, EMAIL_INVALID) {
   if (/[a-z]/.test(email.value) && /[A-Z]/.test(email.value)) {
-    return showError(EMAIL_INVALID);
+    return showError(email, EMAIL_INVALID);
   }
   return true;
 }
