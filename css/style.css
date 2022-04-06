@@ -425,26 +425,26 @@ body.active {
 }
 
 #popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
   background-color: #fff;
   width: 343px;
   z-index: 3;
-  padding: 18px 16px;
+  padding: 18px 16px 30px;
   box-sizing: border-box;
   border-radius: 10px;
-  padding-bottom: 30px;
+  margin: 40px auto;
+}
+
+#popup-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 #close-btn {
   cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 15px;
   font-size: 35px;
   color: #67798e;
+  margin-right: 10px;
 }
 
 #popup-content h2 {
@@ -493,10 +493,6 @@ body.active {
 
 #popup-overlay.active {
   display: block;
-}
-
-#popup-content.active {
-  transform: translate(-50%, -50%) scale(1);
 }
 
 .project-info .languages {
