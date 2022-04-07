@@ -19,6 +19,9 @@ const form = document.querySelector('#contact-form');
 const msg = document.querySelector('small');
 const EMAIL_INVALID = 'Form is not sent. Please use lower case.';
 
+const formElements = document.querySelectorAll('.form-element');
+const contBtn = document.querySelector('#contBtn');
+
 const ul = document.createElement('ul');
 ul.className = 'languages';
 skillsDiv.prepend(ul);
@@ -146,3 +149,31 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const formData = {};
+
+formElements.forEach(input => {
+  input.addEventListener('change', (e) => {
+    formData[input.name] = e.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+})
+
+
+
+formElements.forEach(input => {
+  const parsed = JSON.parse(localStorage.formData);
+  const keys = Object.keys(parsed);
+  for(let i=0; i<keys.length; i++){
+    if(keys[i] === input.name) {
+      let property = keys[i];
+      input.value = parsed[property];
+    }
+  }
+})
+
+formElements.forEach(input => {
+  if (input.value){
+    formData[input.name] = input.value;
+  }
+})
