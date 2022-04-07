@@ -14,13 +14,10 @@ const skillsDiv = document.querySelector('.project-info');
 const workDesc = document.querySelector('#popup-description');
 const liveBtn = document.querySelector('#live-btn');
 const sourceBtn = document.querySelector('#source-btn');
-
 const form = document.querySelector('#contact-form');
 const msg = document.querySelector('small');
 const EMAIL_INVALID = 'Form is not sent. Please use lower case.';
-
 const formElements = document.querySelectorAll('.form-element');
-const contBtn = document.querySelector('#contBtn');
 
 const ul = document.createElement('ul');
 ul.className = 'languages';
@@ -152,28 +149,26 @@ form.addEventListener('submit', (event) => {
 
 const formData = {};
 
-formElements.forEach(input => {
+formElements.forEach((input) => {
   input.addEventListener('change', (e) => {
     formData[input.name] = e.target.value;
     localStorage.setItem('formData', JSON.stringify(formData));
   });
-})
+});
 
-
-
-formElements.forEach(input => {
+formElements.forEach((input) => {
   const parsed = JSON.parse(localStorage.formData);
   const keys = Object.keys(parsed);
-  for(let i=0; i<keys.length; i++){
-    if(keys[i] === input.name) {
-      let property = keys[i];
-      input.value = parsed[property];
+  for (let i = 0; i < keys.length; i += 1) {
+    if (keys[i] === input.name) {
+      const key = keys[i];
+      input.value = parsed[key];
     }
   }
-})
+});
 
-formElements.forEach(input => {
-  if (input.value){
+formElements.forEach((input) => {
+  if (input.value) {
     formData[input.name] = input.value;
   }
-})
+});
