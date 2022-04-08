@@ -93,7 +93,7 @@ function generatePopup(index) {
 }
 
 seeProjectBtn.forEach((btn) => btn.addEventListener('click', () => {
-  popup.classList.add('active');
+  popup.classList.toggle('active');
   bodyElement.classList.add('active');
   popupContent.classList.add('active');
   generatePopup(Array.prototype.indexOf.call(seeProjectBtn, btn));
@@ -142,7 +142,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
   msg.innerText = '';
   const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
-  if (emailValid) {
+  if (!emailValid) {
     form.submit();
   }
 });
@@ -159,7 +159,7 @@ formElements.forEach((input) => {
 formElements.forEach((input) => {
   const parsed = JSON.parse(localStorage.formData);
   const keys = Object.keys(parsed);
-  for (let i = 0; i < keys.length; i += 1) {
+  for (let i = 0; i <= keys.length; i += 1) {
     if (keys[i] === input.name) {
       const key = keys[i];
       input.value = parsed[key];
