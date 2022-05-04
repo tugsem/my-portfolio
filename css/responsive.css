@@ -47,6 +47,10 @@
     right: 155px;
   }
 
+  .nav-hidden > li > a:hover {
+    color: #6070ff;
+  }
+
   a {
     text-decoration: none;
     color: #344563;
