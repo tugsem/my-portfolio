@@ -18,7 +18,6 @@
   #main-description {
     font-size: 20px;
     line-height: 28px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -47,18 +46,18 @@
     right: 155px;
   }
 
-  .nav-hidden > li > a:hover {
-    color: #6070ff;
-  }
-
   a {
     text-decoration: none;
-    color: #344563;
+    color: var(--dark-blue);
+    font-size: 20px;
+  }
+
+  .nav-hidden > li > a:hover {
+    color: var(--main-purple);
   }
 
   .work {
     width: 100%;
-    display: flex;
     flex-direction: row;
     margin-bottom: 114px;
     padding: 24px;
@@ -74,7 +73,6 @@
   }
 
   .info {
-    display: flex;
     flex-direction: column;
     width: 50%;
     padding: 24px 22px 0 22px;
@@ -95,7 +93,6 @@
 
   .about-me {
     width: 100%;
-    display: flex;
     flex-direction: row;
     padding: 142px;
   }
@@ -109,22 +106,12 @@
   }
 
   .lang-subs {
-    display: flex;
     flex-direction: row;
     gap: 12px;
   }
 
   .bottom {
     width: 100%;
-  }
-
-  .grey-background {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px;
-    width: 122px;
-    height: 120px;
   }
 
   .contact {
@@ -194,5 +181,15 @@
 
   #popup-description {
     width: 65%;
+  }
+
+  .work,
+  .info {
+    display: flex;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 0 10px;
   }
 }

@@ -3,15 +3,17 @@ const exit = document.querySelector('#exit-btn');
 const navMenu = document.querySelector('.nav-menu');
 const mainSection = document.querySelector('.main');
 const bodyElement = document.querySelector('body');
-const seeProjectBtn = document.querySelectorAll('.see-project');
+const workContainer = document.querySelector('.work-container');
 
 const popup = document.querySelector('#popup-overlay');
 const closePopup = document.querySelector('#close-btn');
+const subDesc = document.querySelector('.sub-desc');
 const workImg = document.querySelector('#popup-img');
 const popupTitle = document.querySelector('#popup-content h2');
 const popupContent = document.querySelector('#popup-content');
 const skillsDiv = document.querySelector('.project-info');
 const workDesc = document.querySelector('#popup-description');
+
 const liveBtn = document.querySelector('#live-btn');
 const sourceBtn = document.querySelector('#source-btn');
 
@@ -20,7 +22,7 @@ const msg = document.querySelector('small');
 const EMAIL_INVALID = 'Form is not sent. Please use lower case.';
 
 const ul = document.createElement('ul');
-ul.className = 'languages';
+ul.className = 'd-flex languages lang-subs';
 skillsDiv.prepend(ul);
 
 const works = [
@@ -35,69 +37,98 @@ const works = [
     ],
     liveVersionLink: 'https://tugsem.github.io/To-do-list/dist/',
     SourceLink: 'https://github.com/tugsem/To-do-list',
+    date: '2022',
+    stack: 'Front End Dev',
   },
-
   {
-    name: 'Multi-post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageSrc: './assets/Snapshoot2.png',
+    name: 'To Do List',
+    description: 'A minimalist and responsive list design which you can store and edit your to-dos easily.',
+    imageSrc: './assets/Snapshoot1.png',
     technologies: [
       'javascript',
       'Css',
       'Html',
     ],
-    liveVersionLink: '#',
-    SourceLink: '#',
-  },
-
-  {
-    name: 'Topic',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageSrc: './assets/Snapshoot3.png',
-    technologies: [
-      'javascript',
-      'Css',
-      'Html',
-    ],
-    liveVersionLink: '#',
-    SourceLink: '#',
-  },
-
-  {
-    name: 'Multi-post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageSrc: './assets/Snapshoot2.png',
-    technologies: [
-      'javascript',
-      'Css',
-      'Html',
-    ],
-    liveVersionLink: '#',
-    SourceLink: '#',
+    liveVersionLink: 'https://tugsem.github.io/To-do-list/dist/',
+    SourceLink: 'https://github.com/tugsem/To-do-list',
+    date: '2022',
+    stack: 'Front End Dev',
   },
 ];
 
-function generatePopup(index) {
+const generatePopup = (index) => {
   ul.innerText = '';
   popupTitle.innerText = works[index].name;
   workImg.src = works[index].imageSrc;
   workDesc.innerText = works[index].description;
   works[index].technologies.forEach((skill) => {
     const li = document.createElement('li');
-    li.className = 'lang';
+    li.className = 'lang d-flex';
     li.innerText = skill;
     ul.appendChild(li);
   });
+  subDesc.innerHTML = `
+  <img src="./assets/Counter.png" alt="">
+  <h3 class="stack">Front End Dev</h3>
+  <img src="./assets/Counter.png" alt="">
+  <h3 class="year">2022</h3>
+  `;
   liveBtn.href = works[index].liveVersionLink;
   sourceBtn.href = works[index].SourceLink;
-}
+};
 
-seeProjectBtn.forEach((btn) => btn.addEventListener('click', () => {
+const handleDetailBtn = (index) => {
   popup.classList.add('active');
   bodyElement.classList.add('active');
   popupContent.classList.add('active');
-  generatePopup(Array.prototype.indexOf.call(seeProjectBtn, btn));
-}));
+  generatePopup(index);
+};
+
+const generateWorks = () => {
+  works.map((work, index) => {
+    const section = document.createElement('section');
+    const textContainer = document.createElement('div');
+    textContainer.className = 'info';
+    const langs = document.createElement('ul');
+    langs.className = 'languages d-flex';
+    const btn = document.createElement('button');
+
+    if (index % 2 === 0) {
+      section.className = 'work';
+    } else {
+      section.className = 'work right';
+    }
+    section.innerHTML = `
+    <img class="img-work" src="${work.imageSrc}" alt="${work.name}">
+    `;
+    textContainer.innerHTML = `
+    <h2 class="work-title">${work.name}</h2>
+    <div class="sub-desc d-flex">
+        <img src="./assets/Counter.png" alt="">
+        <h3 class="stack">${work.stack}</h3>
+        <img src="./assets/Counter.png" alt="">
+        <h3 class="year">${work.date}</h3>
+    </div>
+    <p class="description">${work.description}</p>
+    `;
+    work.technologies.map((tech) => {
+      const li = document.createElement('li');
+      li.className = 'lang d-flex';
+      li.innerText = tech;
+      langs.appendChild(li);
+      return null;
+    });
+    textContainer.appendChild(langs);
+    btn.className = 'd-flex see-project detail-btn';
+    btn.innerText = 'See project';
+    btn.type = 'button';
+    btn.addEventListener('click', () => handleDetailBtn(index));
+    textContainer.appendChild(btn);
+    section.appendChild(textContainer);
+    workContainer.appendChild(section);
+    return null;
+  });
+};
 
 closePopup.addEventListener('click', () => {
   popup.classList.remove('active');
@@ -146,3 +177,7 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+window.onload = () => {
+  generateWorks();
+};
