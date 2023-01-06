@@ -1,3 +1,4 @@
+
 const hamburger = document.querySelector('#hamburger-btn');
 const exit = document.querySelector('#exit-btn');
 const navMenu = document.querySelector('.nav-menu');
@@ -5,6 +6,7 @@ const mainSection = document.querySelector('.main');
 const bodyElement = document.querySelector('body');
 const workContainer = document.querySelector('.work-container');
 
+/* Pop-up window */
 const popup = document.querySelector('#popup-overlay');
 const closePopup = document.querySelector('#close-btn');
 const subDesc = document.querySelector('.sub-desc');
@@ -13,17 +15,14 @@ const popupTitle = document.querySelector('#popup-content h2');
 const popupContent = document.querySelector('#popup-content');
 const skillsDiv = document.querySelector('.project-info');
 const workDesc = document.querySelector('#popup-description');
-
 const liveBtn = document.querySelector('#live-btn');
 const sourceBtn = document.querySelector('#source-btn');
-
+/* Pop-up window */
 const form = document.querySelector('#contact-form');
 const msg = document.querySelector('small');
 const EMAIL_INVALID = 'Form is not sent. Please use lower case.';
 
 const ul = document.createElement('ul');
-ul.className = 'd-flex languages lang-subs';
-skillsDiv.prepend(ul);
 
 const works = [
   {
@@ -75,22 +74,44 @@ const works = [
   },
 ];
 
+const createSection = () => {
+  const section = document.createElement('section');
+  section.className = "work-section";
+  section.innerHTML = `
+  <img class="img-work" alt="work image">
+  <div class="text-wrapper">
+  <div class="info"></div>
+  <ul class="languages d-flex"></ul>
+  <button class="d-flex see-project detail-btn" type="button">See Project</button>
+  </div>
+  `;
+  return section;
+}
+
+const createTechList = (node, array) => {
+  array.forEach((lang) => {
+  const li = document.createElement('li');
+  li.className = 'lang d-flex';
+  li.innerText = lang;
+  node.appendChild(li);
+  return node;
+  })
+}
 const generatePopup = (index) => {
+  ul.className = 'languages d-flex';
   ul.innerText = '';
   popupTitle.innerText = works[index].name;
   workImg.src = works[index].imageSrc;
   workDesc.innerText = works[index].description;
-  works[index].technologies.forEach((skill) => {
-    const li = document.createElement('li');
-    li.className = 'lang d-flex';
-    li.innerText = skill;
-    ul.appendChild(li);
-  });
+
+  createTechList(ul, works[index].technologies);
+  skillsDiv.prepend(ul);
+
   subDesc.innerHTML = `
   <img src="./assets/Counter.png" alt="">
-  <h3 class="stack">Front End Dev</h3>
+  <h3 class="stack">${works[index].stack}</h3>
   <img src="./assets/Counter.png" alt="">
-  <h3 class="year">2022</h3>
+  <h3 class="year">${works[index].date}</h3>
   `;
   liveBtn.href = works[index].liveVersionLink;
   sourceBtn.href = works[index].SourceLink;
@@ -103,49 +124,41 @@ const handleDetailBtn = (index) => {
   generatePopup(index);
 };
 
+const generateWorkInfo = (node, name, stack, date, description) => {
+  node.innerHTML = `
+  <h2 class="work-title">${name}</h2>
+  <div class="sub-desc d-flex">
+      <img src="./assets/Counter.png" alt="">
+      <h3 class="stack">${stack}</h3>
+      <img src="./assets/Counter.png" alt="">
+      <h3 class="year">${date}</h3>
+  </div>
+  <p class="description">${description}</p>
+  `;
+}
+
 const generateWorks = () => {
-  works.map((work, index) => {
-    const section = document.createElement('section');
-    const textContainer = document.createElement('div');
-    textContainer.className = 'info';
-    const langs = document.createElement('ul');
-    langs.className = 'languages d-flex';
-    const btn = document.createElement('button');
+  works.forEach((work, index) => {
+    let {name, stack, date, description, technologies, imageSrc} = work;
+    const section = createSection();
+    const textContainer = section.children[1].children[0];
+    const langs = section.children[1].children[1];
+    const btn = section.children[1].children[2];
+    const workImage = section.children[0];
 
     if (index % 2 === 0) {
       section.className = 'work';
     } else {
       section.className = 'work right';
     }
-    section.innerHTML = `
-    <img class="img-work" src="${work.imageSrc}" alt="${work.name}">
-    `;
-    textContainer.innerHTML = `
-    <h2 class="work-title">${work.name}</h2>
-    <div class="sub-desc d-flex">
-        <img src="./assets/Counter.png" alt="">
-        <h3 class="stack">${work.stack}</h3>
-        <img src="./assets/Counter.png" alt="">
-        <h3 class="year">${work.date}</h3>
-    </div>
-    <p class="description">${work.description}</p>
-    `;
-    work.technologies.map((tech) => {
-      const li = document.createElement('li');
-      li.className = 'lang d-flex';
-      li.innerText = tech;
-      langs.appendChild(li);
-      return null;
-    });
-    textContainer.appendChild(langs);
-    btn.className = 'd-flex see-project detail-btn';
-    btn.innerText = 'See project';
-    btn.type = 'button';
+    langs.innerText = '';
+    workImage.setAttribute('src',`${imageSrc}`);
+    generateWorkInfo(textContainer, name, stack, date, description, technologies);
+    createTechList(langs, technologies);
+
     btn.addEventListener('click', () => handleDetailBtn(index));
-    textContainer.appendChild(btn);
-    section.appendChild(textContainer);
     workContainer.appendChild(section);
-    return null;
+
   });
 };
 
