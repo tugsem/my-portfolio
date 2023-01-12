@@ -1,11 +1,10 @@
-
 const hamburger = document.querySelector('#hamburger-btn');
-const exit = document.querySelector('#exit-btn');
+const header = document.querySelector('header');
 const navMenu = document.querySelector('.nav-menu');
 const mainSection = document.querySelector('.main');
 const bodyElement = document.querySelector('body');
 const workContainer = document.querySelector('.work-container');
-
+const alert = document.querySelector('.alert');
 /* Pop-up window */
 const popup = document.querySelector('#popup-overlay');
 const closePopup = document.querySelector('#close-btn');
@@ -76,7 +75,7 @@ const works = [
 
 const createSection = () => {
   const section = document.createElement('section');
-  section.className = "work-section";
+  section.className = 'work-section';
   section.innerHTML = `
   <img class="img-work" alt="work image">
   <div class="text-wrapper">
@@ -86,17 +85,17 @@ const createSection = () => {
   </div>
   `;
   return section;
-}
+};
 
 const createTechList = (node, array) => {
   array.forEach((lang) => {
-  const li = document.createElement('li');
-  li.className = 'lang d-flex';
-  li.innerText = lang;
-  node.appendChild(li);
-  return node;
-  })
-}
+    const li = document.createElement('li');
+    li.className = 'lang d-flex';
+    li.innerText = lang;
+    node.appendChild(li);
+    return node;
+  });
+};
 const generatePopup = (index) => {
   ul.className = 'languages d-flex';
   ul.innerText = '';
@@ -135,11 +134,13 @@ const generateWorkInfo = (node, name, stack, date, description) => {
   </div>
   <p class="description">${description}</p>
   `;
-}
+};
 
 const generateWorks = () => {
   works.forEach((work, index) => {
-    let {name, stack, date, description, technologies, imageSrc} = work;
+    const {
+      name, stack, date, description, technologies, imageSrc,
+    } = work;
     const section = createSection();
     const textContainer = section.children[1].children[0];
     const langs = section.children[1].children[1];
@@ -152,13 +153,12 @@ const generateWorks = () => {
       section.className = 'work right';
     }
     langs.innerText = '';
-    workImage.setAttribute('src',`${imageSrc}`);
+    workImage.setAttribute('src', `${imageSrc}`);
     generateWorkInfo(textContainer, name, stack, date, description, technologies);
     createTechList(langs, technologies);
 
     btn.addEventListener('click', () => handleDetailBtn(index));
     workContainer.appendChild(section);
-
   });
 };
 
@@ -166,26 +166,6 @@ closePopup.addEventListener('click', () => {
   popup.classList.remove('active');
   bodyElement.classList.remove('active');
   popupContent.classList.remove('active');
-});
-
-hamburger.addEventListener('click', () => {
-  mainSection.classList.add('active');
-  bodyElement.classList.add('active');
-  navMenu.classList.add('active');
-});
-
-exit.addEventListener('click', () => {
-  navMenu.classList.remove('active');
-  mainSection.classList.remove('active');
-  bodyElement.classList.remove('active');
-});
-
-document.querySelectorAll('.mobile-menu > li').forEach((link) => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-    mainSection.classList.remove('active');
-    bodyElement.classList.remove('active');
-  });
 });
 
 function showError(email, message) {
@@ -208,6 +188,49 @@ form.addEventListener('submit', (event) => {
   if (emailValid) {
     form.submit();
   }
+});
+
+// Toggle event
+const toggleSwitch = document.querySelector('.theme-switch');
+
+const switchTheme = (e) => {
+  if (e.target.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+  }
+};
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+  document.documentElement.setAttribute('data-theme', currentTheme);
+}
+
+if (currentTheme === 'dark') {
+  toggleSwitch.checked = true;
+}
+/**/
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mainSection.classList.toggle('active');
+  bodyElement.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  alert.classList.toggle('active');
+  header.classList.toggle('active');
+});
+
+document.querySelectorAll('.mobile-menu > li').forEach((link) => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+    mainSection.classList.remove('active');
+    bodyElement.classList.remove('active');
+  });
 });
 
 window.onload = () => {
