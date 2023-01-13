@@ -26,7 +26,7 @@ const ul = document.createElement('ul');
 const works = [
   {
     name: 'Dream Rent',
-    description: 'Dream rent is an appointment booking application, allows users to book an appointment to visit their dream home. This application is built using React in the front-end and the back-end is built using Rails.',
+    description: 'Dream rent is an appointment booking application, that allows users to book an appointment to visit their dream home. This application is built using React in the front-end and the back-end is built using Rails.',
     imageSrc: './assets/work-img/dream-rent-login.png',
     technologies: [
       'JavaScript',
@@ -41,7 +41,7 @@ const works = [
   },
   {
     name: 'Village Festival',
-    description: 'A responsive website about an upcoming event, the activities and information about artists those are going to attend the event, created with Html, Css and Javascript.',
+    description: 'A responsive website about an upcoming event, the activities, and information about artists who are going to attend the event.',
     imageSrc: './assets/work-img/villageFest.png',
     technologies: [
       'JavaScript',
