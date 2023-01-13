@@ -46,6 +46,9 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@TugsemSaranli](https://twitter.com/TugsemSaranli)
 - LinkedIn: [Tugsem Saranli](https://linkedin.com/in/tugsem-saranli-5b2a98230/)
 
+## Inspired by
+ - [@evavic44](https://github.com/evavic44/eke)
+ 
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
