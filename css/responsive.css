@@ -63,6 +63,8 @@
 
   .work-container {
     align-items: center;
+    padding-top: 115px;
+    padding-bottom: 110px;
   }
 
   .work {
@@ -113,11 +115,6 @@
     display: block;
     width: 100%;
     padding: 0 24px;
-  }
-
-  #about-illustration {
-    left: 200px;
-    bottom: 190px;
   }
 
   .techlist {
@@ -260,7 +257,7 @@
 
 @media screen and (min-width: 1200px) {
   .main {
-    padding: 130px 200px 130px 200px;
+    padding: 200px 200px 130px 200px;
   }
 
   #first-title {
@@ -277,15 +274,5 @@
 
   .left-side {
     width: 60%;
-  }
-
-  #about-illustration {
-    bottom: 250px;
-  }
-}
-
-@media screen and (min-width: 1480px) {
-  #about-illustration {
-    bottom: 210px;
   }
 }

@@ -27,7 +27,7 @@ const works = [
   {
     name: 'Dream Rent',
     description: 'Dream rent is an appointment booking application, allows users to book an appointment to visit their dream home. This application is built using React in the front-end and the back-end is built using Rails.',
-    imageSrc: './assets/dreamrent.jfif',
+    imageSrc: './assets/work-img/dream-rent-login.png',
     technologies: [
       'JavaScript',
       'Ruby on Rails',
@@ -40,25 +40,23 @@ const works = [
     stack: 'Full Stack Dev',
   },
   {
-    name: 'To-Do List',
-    description: 'An SPA created with React Library. User can add, check, delete and edit items.',
-    imageSrc: './assets/reactodo.jfif',
+    name: 'Village Festival',
+    description: 'A responsive website about an upcoming event, the activities and information about artists those are going to attend the event, created with Html, Css and Javascript.',
+    imageSrc: './assets/work-img/villageFest.png',
     technologies: [
       'JavaScript',
-      'ReactJS',
-      'Redux',
       'CSS',
       'HTML',
     ],
-    liveVersionLink: 'https://tugsem.github.io/react-to-do/',
-    SourceLink: 'https://github.com/tugsem/react-to-do',
+    liveVersionLink: 'https://tugsem.github.io/VillageFestival/',
+    SourceLink: 'https://github.com/tugsem/VillageFestival',
     date: '2022',
     stack: 'Front End Dev',
   },
   {
     name: 'Space Traveler\'s Hub',
     description: 'A (SPA) web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join missions.',
-    imageSrc: './assets/spacetravelershub.jfif',
+    imageSrc: './assets/work-img/spaceTravelers.png',
     technologies: [
       'JavaScript',
       'ReactJS',
@@ -77,7 +75,7 @@ const createSection = () => {
   const section = document.createElement('section');
   section.className = 'work-section';
   section.innerHTML = `
-  <img class="img-work" alt="work image">
+  <div class="img-work" alt="work image"></div>
   <div class="text-wrapper">
   <div class="info"></div>
   <ul class="languages d-flex"></ul>
@@ -100,7 +98,7 @@ const generatePopup = (index) => {
   ul.className = 'languages d-flex';
   ul.innerText = '';
   popupTitle.innerText = works[index].name;
-  workImg.src = works[index].imageSrc;
+  workImg.style.backgroundImage = `url('${works[index].imageSrc}')`;
   workDesc.innerText = works[index].description;
 
   createTechList(ul, works[index].technologies);
@@ -149,7 +147,7 @@ const generateWorks = () => {
       section.className = 'work right';
     }
     langs.innerText = '';
-    workImage.setAttribute('src', `${imageSrc}`);
+    workImage.style.backgroundImage = `url('${imageSrc}')`;
     generateWorkInfo(textContainer, name, stack, date, description, technologies);
     createTechList(langs, technologies);
 
