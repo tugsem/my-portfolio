@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('#hamburger-btn');
 const header = document.querySelector('header');
 const navMenu = document.querySelector('.nav-menu');
-const mainSection = document.querySelector('.main');
+const mainSection = document.querySelector('.main-wrapper');
 const bodyElement = document.querySelector('body');
 const workContainer = document.querySelector('.work-container');
 const alert = document.querySelector('.alert');
@@ -107,10 +107,8 @@ const generatePopup = (index) => {
   skillsDiv.prepend(ul);
 
   subDesc.innerHTML = `
-  <img src="./assets/Counter.png" alt="">
-  <h3 class="stack">${works[index].stack}</h3>
-  <img src="./assets/Counter.png" alt="">
-  <h3 class="year">${works[index].date}</h3>
+  <h3 class="stack"> ${works[index].stack}</h3>
+  <h3 class="year"> ${works[index].date}</h3>
   `;
   liveBtn.href = works[index].liveVersionLink;
   sourceBtn.href = works[index].SourceLink;
@@ -125,12 +123,10 @@ const handleDetailBtn = (index) => {
 
 const generateWorkInfo = (node, name, stack, date, description) => {
   node.innerHTML = `
-  <h2 class="work-title">${name}</h2>
+  <h2 class="work-title"> ${name}</h2>
   <div class="sub-desc d-flex">
-      <img src="./assets/Counter.png" alt="">
-      <h3 class="stack">${stack}</h3>
-      <img src="./assets/Counter.png" alt="">
-      <h3 class="year">${date}</h3>
+      <h3 class="stack"> ${stack}</h3>
+      <h3 class="year"> ${date}</h3>
   </div>
   <p class="description">${description}</p>
   `;

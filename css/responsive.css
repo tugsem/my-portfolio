@@ -1,12 +1,17 @@
 @media screen and (min-width: 768px) {
   .main-wrapper {
-    padding: 200px 260px 230px 300px;
+    padding: 200px 160px 130px 200px;
   }
 
   .main {
-    padding: 200px 260px 230px 300px;
     width: 100%;
-    margin-bottom: 114px;
+  }
+
+  #main-illustration {
+    width: 400px;
+    bottom: 150px;
+    left: -100px;
+    opacity: 0.5;
   }
 
   #first-title {
@@ -19,10 +24,6 @@
   header {
     width: 100%;
     height: 70px;
-  }
-
-  #about-illustration {
-    position: relative;
   }
 
   .alert {
@@ -51,14 +52,21 @@
     right: 140px;
   }
 
-  a {
+  .nav-item {
     text-decoration: none;
-    color: var(--dark-blue);
-    font-size: 20px;
+    color: var(--text);
+  }
+
+  .nav-item:hover {
+    color: var(--main-purple);
+  }
+
+  .work-container {
+    align-items: center;
   }
 
   .work {
-    width: 100%;
+    width: 90%;
     flex-direction: row;
     margin-bottom: 114px;
     padding: 24px;
@@ -97,15 +105,19 @@
   }
 
   .about-me {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+    padding: 114px 10%;
     align-items: center;
-    padding: 10%;
   }
 
-  .left-side {
-    width: 60%;
+  .latest-works {
+    display: block;
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  #about-illustration {
+    left: 200px;
+    bottom: 190px;
   }
 
   .techlist {
@@ -207,37 +219,73 @@
     display: none;
   }
 
+  .footer {
+    height: 50px;
+  }
+
   .desktop-icons {
+    display: flex;
     list-style: none;
     position: fixed;
     flex-direction: column;
-    align-items: flex-end;
     gap: 20px;
-    width: 170px;
-    margin: 12px 0;
-    right: 0;
-    bottom: 200px;
+    margin-bottom: 12px;
+    right: 60px;
+    bottom: 100px;
+  }
+
+  .slider:hover {
+    box-shadow: 0 0 10px var(--dark-grey);
+  }
+
+  svg:hover {
+    color: var(--main-purple);
+    transform: translate(0, -50%);
+    transition: transform 0.5s;
   }
 
   .desktop-icons > li > a > svg {
     width: 16px;
     height: 16px;
-    transition: all 2s ease;
   }
 
-  .desktop-icons > li > a {
-    transition: all 2s ease;
-  }
-
-  /* .icons > li > a > svg:hover {
-  transform:
-} */
   #vertical-line {
     position: fixed;
     height: 100px;
-    width: 100px;
-    border-right: 2px solid var(--main-purple);
+    border-right: 1px solid var(--text);
     bottom: 0;
-    right: 7px;
+    right: 68px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    padding: 130px 200px 130px 200px;
+  }
+
+  #first-title {
+    width: 100%;
+  }
+
+  .about-me {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+
+  .left-side {
+    width: 60%;
+  }
+
+  #about-illustration {
+    bottom: 250px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  #about-illustration {
+    bottom: 210px;
   }
 }
