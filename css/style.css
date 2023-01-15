@@ -744,7 +744,7 @@ body.active {
 .resume-btn::before {
   width: 2px;
   height: 60px;
-  box-shadow: 165px 0 var(--main-purple);
+  box-shadow: 163px 0 var(--main-purple);
 }
 
 .resume-btn::after {
@@ -755,7 +755,7 @@ body.active {
 
 .resume-btn:hover::before {
   left: -10px;
-  box-shadow: 185px 0 var(--main-purple);
+  box-shadow: 184px 0 var(--main-purple);
 }
 
 .resume-btn:hover::after {
