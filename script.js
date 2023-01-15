@@ -221,9 +221,12 @@ hamburger.addEventListener('click', () => {
 
 document.querySelectorAll('.mobile-menu > li').forEach((link) => {
   link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-    mainSection.classList.remove('active');
-    bodyElement.classList.remove('active');
+    hamburger.classList.toggle('active');
+    alert.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    mainSection.classList.toggle('active');
+    bodyElement.classList.toggle('active');
+    header.classList.toggle('active');
   });
 });
 

@@ -102,7 +102,7 @@ header {
 
 .main-wrapper {
   width: 100%;
-  padding: 114px 24px 200px 24px;
+  padding: 114px 24px;
   flex-direction: column;
 }
 
@@ -208,7 +208,7 @@ header {
 
 /* Work container */
 .work-container {
-  padding: 0 10%;
+  padding: 100px 10%;
   flex-direction: column;
 }
 
@@ -319,7 +319,7 @@ header {
   background-repeat: no-repeat;
   flex-direction: column;
   justify-content: center;
-  padding: 114px 0 113px 0;
+  /* padding: 114px 0 113px 0; */
 }
 
 .title {
