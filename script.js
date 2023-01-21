@@ -42,7 +42,7 @@ const works = [
   {
     name: 'Air Pollution App',
     description: 'A (SPA) web application created with Air Pollution Api, users can check levels of the cities, filter them via dropdown menu and see the details per city on the new page.',
-    imageSrc: './assets/work-img/airPollution.png',
+    imageSrc: './assets/work-img/airPollution.jpg',
     technologies: [
       'JavaScript',
       'React/Redux',
