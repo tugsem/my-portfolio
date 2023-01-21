@@ -40,6 +40,21 @@ const works = [
     stack: 'Full Stack Dev',
   },
   {
+    name: 'Air Pollution App',
+    description: 'A (SPA) web application created with Air Pollution Api, users can check levels of the cities, filter them via dropdown menu and see the details per city on the new page.',
+    imageSrc: './assets/work-img/airPollution.png',
+    technologies: [
+      'JavaScript',
+      'React/Redux',
+      'CSS',
+      'HTML'
+    ],
+    liveVersionLink: 'https://main.d3dcuht188qbz2.amplifyapp.com',
+    SourceLink: 'https://github.com/tugsem/air-pollution',
+    date: '2022',
+    stack: 'Front End Dev',
+  },
+  {
     name: 'Village Festival',
     description: 'A responsive website about an upcoming event, the activities, and information about artists who are going to attend the event.',
     imageSrc: './assets/work-img/villageFest.png',
@@ -59,8 +74,7 @@ const works = [
     imageSrc: './assets/work-img/spaceTravelers.png',
     technologies: [
       'JavaScript',
-      'ReactJS',
-      'Redux',
+      'React/Redux',
       'CSS',
       'HTML',
     ],
