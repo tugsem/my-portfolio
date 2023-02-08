@@ -9,12 +9,10 @@
 - HTML
 - CSS
 - Javascript
-- Figma
-- Node
 - Linters(Lighthouse, Webhint, Stylelint)
 - VS Code
 
-## Live Demo 
+## Live Demo
 
 [Live Demo Link](https://tugsem.github.io/my-portfolio/)
 

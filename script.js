@@ -47,7 +47,7 @@ const works = [
       'JavaScript',
       'React/Redux',
       'CSS',
-      'HTML'
+      'HTML',
     ],
     liveVersionLink: 'https://main.d3dcuht188qbz2.amplifyapp.com',
     SourceLink: 'https://github.com/tugsem/air-pollution',
