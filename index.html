@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./assets/logo.svg" type="image/svg">
     <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b7309bd951.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
@@ -50,8 +50,8 @@
               </div>
         </ul>
     </div>
-
-    <div class="main-wrapper">
+<main>
+    <section class="main-wrapper">
         <blockquote class="alert">
             <span>This site is currently being updated.</span>
             <i class="fas fa-exclamation-circle"></i>
@@ -107,18 +107,16 @@
                     <span id="vertical-line"></span>
             </ul>
         </article>
-    </div>
+    </section>
     <section class="about-me d-flex" id="about">
-        <section class="left-side">
+        <section class="left-side d-flex">
             <h2 class="title">About Me</h2>
-            <!-- <img id="about-illustration" src="./assets/pinksvg.svg"/> -->
-            <br>
+            <div class="about-illustration"></div>
             <p id="about-description">Hello! My name is Tuğsem and I enjoy creating and designing websites that live on the internet.
                 I live in Turkey but I love traveling the world. I graduated from Microverse in January 2023. I learned both my professional and
                 technical skills from there working and collaborating with my teammates around the &#127757;.
                 Look through some of my work and experience! If you like what you see and have a project you need to be coded,
                 don’t hesitate to contact me.</p>
-                <br>
             <a type="button" class="resume-btn" target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vRxGgJQ0lVrma-Vqd9vtYrODWN8fm3nAi4nBJtQ3a9trHC0aTO2GKbeyuf2xAHEq6g242UWD3C2aUmR/pub"><b>Get My Resume</b></a>
         </section>
         <div class="techlist">
@@ -151,6 +149,7 @@
         <h2 class="latest-works title">Latest Works </h2>
     </section>
 
+    <div class="up-arrow"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
 
     <section id="popup-overlay">
         <div id="popup-content">
@@ -236,9 +235,14 @@
         </ul>
         <span id="copyright">Designed & Built by Tuğsem Saranlı</span>
     </footer>
-    <script src="./particles.js"></script>
-    <script src="./collapsibleMenu.js"></script>
-    <script src="./script.js"></script>
+</main>
+
+    <script type="module" src="./scripts/main.js" ></script>
+    <script type="module" src="./scripts/popupMenu.js" ></script>
+    <script type="module" src="./scripts/works.js"></script>
+
+    <script src="./scripts/switchTheme.js"></script>
+    <script src="./scripts/collapsibleMenu.js"></script>
 
 </body>
 

@@ -33,6 +33,7 @@ svg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -104,6 +105,7 @@ header {
 
 .main-wrapper {
   width: 100%;
+  height: 100vh;
   padding: 114px 24px;
   flex-direction: column;
   justify-content: center;
@@ -172,6 +174,22 @@ header {
   z-index: 3;
 }
 
+.up-arrow {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: var(--soft-purple);
+  color: var(--text);
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
 .footer {
   position: sticky;
   background-color: var(--main-purple);
@@ -211,7 +229,7 @@ header {
 
 /* Work container */
 .work-container {
-  padding: 100px 10%;
+  padding: 100px 10% 0 10%;
   flex-direction: column;
 }
 
@@ -317,9 +335,6 @@ header {
 
 .about-me {
   width: 100%;
-  background-image: url('../assets/pinksvg.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
   flex-direction: column;
   justify-content: center;
 
@@ -333,18 +348,29 @@ header {
 
 #about-description {
   width: 100%;
+  text-align: center;
   padding: 50px 0;
   animation: heading 3s;
 }
 
+.about-illustration {
+  width: 100%;
+  height: 350px;
+  background-image: url('../assets/about.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .left-side {
   position: relative;
+  flex-direction: column;
+  align-items: center;
   padding: 0 24px;
 }
 
 .techlist {
   list-style: none;
-  width: 100%;
+  width: 80%;
   padding: 100px 0;
 }
 
@@ -363,7 +389,7 @@ header {
 /* Collapsible menu */
 
 .collapsible {
-  width: 100%;
+  width: 80%;
   color: var(--text);
   font-size: 20px;
   justify-content: center;
@@ -392,22 +418,11 @@ header {
 }
 
 .content {
+  flex-wrap: wrap;
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
   gap: 0 10px;
-  animation: skills 1s linear alternate;
-}
-
-@keyframes skills {
-  from {
-    margin-left: -200px;
-  }
-
-  to {
-    margin-left: 0;
-  }
 }
 
 .grey-background {
@@ -419,7 +434,8 @@ header {
   padding: 10px;
   width: 130px;
   height: 130px;
-  background: var(--soft-purple);
+  border-bottom: 2px solid var(--soft-purple);
+  border-left: 2px solid var(--soft-purple);
   gap: 10px;
   border-radius: 100px;
   margin: 12px 0 12px 0;
@@ -579,6 +595,10 @@ body.active {
 }
 
 .main-wrapper.active {
+  filter: blur(4px);
+}
+
+main.active {
   filter: blur(4px);
 }
 
