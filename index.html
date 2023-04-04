@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="d-flex">
-        <a id="logo">
+        <a id="logo" href="#headline">
             <img src="./assets/logo.svg"/>
         </a>
         <div class="hamburger" id="hamburger-btn">
@@ -51,13 +51,16 @@
         </ul>
     </div>
 <main>
-    <section class="main-wrapper">
+    <section class="main-wrapper d-flex">
         <blockquote class="alert">
             <span>This site is currently being updated.</span>
             <i class="fas fa-exclamation-circle"></i>
         </blockquote>
-        <img id="main-illustration" src="./assets/yellowsvg.svg"/>
-        <article class="main d-flex">
+        <div id="circle">
+            <img id="main-illustration" src="./assets/yellowsvg.svg"/>
+        </div>
+
+        <article class="main d-flex" id="headline">
             <span id="main-small-title">Hi, My name is</span>
             <h1 id="first-title">Tuğsem Saranlı.<br>I build things for the web.</h1>
             <p class="main-description d-flex">I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need to be coded, don’t hesitate to contact me.</p>
@@ -108,6 +111,7 @@
             </ul>
         </article>
     </section>
+
     <section class="about-me d-flex" id="about">
         <section class="left-side d-flex">
             <h2 class="title">About Me</h2>
@@ -120,7 +124,6 @@
             <a type="button" class="resume-btn" target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vRxGgJQ0lVrma-Vqd9vtYrODWN8fm3nAi4nBJtQ3a9trHC0aTO2GKbeyuf2xAHEq6g242UWD3C2aUmR/pub"><b>Get My Resume</b></a>
         </section>
         <div class="techlist">
-            <div id="circle"></div>
             <div class="collapsible bottom">Languages</div>
                 <ul class="d-flex content">
                     <li class="d-flex grey-background"><img src="./assets/js.png" alt="javascript" width="40"
@@ -151,10 +154,10 @@
 
     <div class="up-arrow"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>
 
-    <section id="popup-overlay">
-        <div id="popup-content">
+    <section class="popup-overlay">
+        <div class="popup-content">
             <div class="d-flex" id="popup-title">
-                <h2></h2>
+                <h3 id="work-title"></h3>
                 <div id="close-btn">&times;</div>
             </div>
             <div class="d-flex sub-desc"></div>
