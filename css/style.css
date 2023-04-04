@@ -355,6 +355,7 @@ header {
 }
 
 .title {
+  width: 100%;
   line-height: 52px;
   border-bottom: 2px solid var(--main-purple);
 }

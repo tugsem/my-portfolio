@@ -86,10 +86,6 @@
     height: 448px;
   }
 
-  .title {
-    width: 100%;
-  }
-
   .text-wrapper {
     flex-direction: column;
     width: 50%;
