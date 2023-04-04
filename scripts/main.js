@@ -69,6 +69,7 @@ hamburger.addEventListener('click', () => {
   mainSection.classList.toggle('active');
   main.classList.toggle('active');
   navMenu.classList.toggle('active');
+  bodyElement.classList.toggle('active');
   alert.classList.toggle('active');
   header.classList.toggle('active');
 });
@@ -79,6 +80,7 @@ document.querySelectorAll('.mobile-menu > li').forEach((link) => {
     alert.classList.toggle('active');
     navMenu.classList.toggle('active');
     mainSection.classList.toggle('active');
+    main.classList.toggle('active');
     bodyElement.classList.toggle('active');
     header.classList.toggle('active');
   });

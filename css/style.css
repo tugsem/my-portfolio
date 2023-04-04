@@ -682,7 +682,7 @@ main.active {
 
 #popup-img {
   width: inherit;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
