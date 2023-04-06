@@ -9,8 +9,8 @@
 
   #circle {
     transform: scale(1.5, 1.5);
-    top: 100px;
-    right: 0;
+    /* top: -100px;
+    right: -100px; */
   }
 
   #first-title {
