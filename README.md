@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Inspired by
  - [@evavic44](https://github.com/evavic44/eke)
- 
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
