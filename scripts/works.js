@@ -1,5 +1,19 @@
 const works = [
   {
+    name: 'Losangeles Mountains',
+    description: 'Explore the rich history of the Los Angeles mountains and stay updated on upcoming climbing schedules with our dedicated website.',
+    imageSrc: '../assets/work-img/la.png',
+    technologies: [
+      'JavaScript',
+      'CSS',
+      'HTML',
+    ],
+    liveVersionLink: 'tugsem.github.io/LA-mountains/',
+    SourceLink: 'https://github.com/tugsem/LA-mountains',
+    date: '2023',
+    stack: 'Front End Dev',
+  },
+  {
     name: 'Dream Rent',
     description: 'Dream rent is an appointment booking application, that allows users to book an appointment to visit their dream home. This application is built using React in the front-end and the back-end is built using Rails.',
     imageSrc: '../assets/work-img/dream-rent-login.png',
