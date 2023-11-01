@@ -1,5 +1,18 @@
 const works = [
   {
+    name: 'Ace of Spades',
+    description: 'In this CSS project, I tried to hone my design and coding skills. I chose to create a 3D playing card. When you hover it, it will flip and you can see the back side of it.',
+    imageSrc: '../assets/work-img/aceofspades.png',
+    technologies: [
+      'HTML',
+      'CSS',
+    ],
+    liveVersionLink: 'https://tugsem.github.io/aceofspades/',
+    SourceLink: 'https://github.com/tugsem/aceofspades',
+    date: '2023',
+    stack: 'Front End Dev',
+  },
+  {
     name: 'Losangeles Mountains',
     description: 'Explore the rich history of the Los Angeles mountains and stay updated on upcoming climbing schedules with our dedicated website.',
     imageSrc: '../assets/work-img/la.png',
@@ -8,7 +21,7 @@ const works = [
       'CSS',
       'HTML',
     ],
-    liveVersionLink: 'tugsem.github.io/LA-mountains/',
+    liveVersionLink: 'https://tugsem.github.io/LA-mountains/',
     SourceLink: 'https://github.com/tugsem/LA-mountains',
     date: '2023',
     stack: 'Front End Dev',
