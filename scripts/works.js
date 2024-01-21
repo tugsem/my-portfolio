@@ -1,5 +1,19 @@
 const works = [
   {
+    name: 'RoboFriends',
+    description: 'An instant searchbox for finding robot friends by name, created using an API.',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/robofriends.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'Javascript'
+    ],
+    liveVersionLink: 'stunning-salmiakki-34414f.netlify.app/',
+    SourceLink: 'https://github.com/tugsem/robofriends',
+    date: '2020',
+    stack: 'Front End Dev',
+  },
+  {
     name: 'Ace of Spades',
     description: 'In this CSS project, I tried to hone my design and coding skills. I chose to create a 3D playing card. When you hover it, it will flip and you can see the back side of it.',
     imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/aceofspades.png',
