@@ -4,7 +4,7 @@ const works = [
     description: 'An instant searchbox for finding robot friends by name, created using an API.',
     imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/robofriends.png',
     technologies: [
-      'HTML',
+      'ReactJS/Redux',
       'CSS',
       'Javascript'
     ],
