@@ -1,8 +1,49 @@
 const works = [
   {
+    name: 'RoboFriends',
+    description: 'An instant searchbox for finding robot friends by name, created using an API.',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/robofriends.png',
+    technologies: [
+      'HTML',
+      'CSS',
+      'Javascript'
+    ],
+    liveVersionLink: 'stunning-salmiakki-34414f.netlify.app/',
+    SourceLink: 'https://github.com/tugsem/robofriends',
+    date: '2020',
+    stack: 'Front End Dev',
+  },
+  {
+    name: 'Ace of Spades',
+    description: 'In this CSS project, I tried to hone my design and coding skills. I chose to create a 3D playing card. When you hover it, it will flip and you can see the back side of it.',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/aceofspades.png',
+    technologies: [
+      'HTML',
+      'CSS',
+    ],
+    liveVersionLink: 'https://tugsem.github.io/aceofspades/',
+    SourceLink: 'https://github.com/tugsem/aceofspades',
+    date: '2023',
+    stack: 'Front End Dev',
+  },
+  {
+    name: 'Losangeles Mountains',
+    description: 'Explore the rich history of the Los Angeles mountains and stay updated on upcoming climbing schedules with our dedicated website.',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/la.png',
+    technologies: [
+      'JavaScript',
+      'CSS',
+      'HTML',
+    ],
+    liveVersionLink: 'https://tugsem.github.io/LA-mountains/',
+    SourceLink: 'https://github.com/tugsem/LA-mountains',
+    date: '2023',
+    stack: 'Front End Dev',
+  },
+  {
     name: 'Dream Rent',
     description: 'Dream rent is an appointment booking application, that allows users to book an appointment to visit their dream home. This application is built using React in the front-end and the back-end is built using Rails.',
-    imageSrc: '../assets/work-img/dream-rent-login.png',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/dream-rent-login.png',
     technologies: [
       'JavaScript',
       'Ruby on Rails',
@@ -17,7 +58,7 @@ const works = [
   {
     name: 'Air Pollution App',
     description: 'A (SPA) web application created with Air Pollution Api, users can check levels of the cities, filter them via dropdown menu and see the details per city on the new page.',
-    imageSrc: '../assets/work-img/airPollution.jpg',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/airPollution.jpg',
     technologies: [
       'JavaScript',
       'React/Redux',
@@ -32,7 +73,7 @@ const works = [
   {
     name: 'Village Festival',
     description: 'A responsive website about an upcoming event, the activities, and information about artists who are going to attend the event.',
-    imageSrc: '../assets/work-img/villageFest.png',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/villageFest.png',
     technologies: [
       'JavaScript',
       'CSS',
@@ -46,7 +87,7 @@ const works = [
   {
     name: 'Space Traveler\'s Hub',
     description: 'A (SPA) web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join missions.',
-    imageSrc: '../assets/work-img/spaceTravelers.png',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/spaceTravelers.png',
     technologies: [
       'JavaScript',
       'React/Redux',
