@@ -50,7 +50,7 @@ const works = [
       'CSS',
       'HTML',
     ],
-    liveVersionLink: 'https://dream-rent-booking.netlify.app',
+    liveVersionLink: 'https://dream-rent-irrw.onrender.com/',
     SourceLink: 'https://github.com/tugsem/dream-rent',
     date: '2022',
     stack: 'Full Stack Dev',
