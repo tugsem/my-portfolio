@@ -16,7 +16,7 @@ const works = [
   {
     name: 'Ace of Spades',
     description: 'In this CSS project, I tried to hone my design and coding skills. I chose to create a 3D playing card. When you hover it, it will flip and you can see the back side of it.',
-    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/aceofspades.png',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/aceofspades.gif',
     technologies: [
       'HTML',
       'CSS',
