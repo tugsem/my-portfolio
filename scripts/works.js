@@ -1,5 +1,18 @@
 const works = [
   {
+    name: 'Ecomm',
+    description: 'An e-commerce website with admin panel with daily stats, revenue graph for a week and orders. Stripe API is used for the checkout process',
+    imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/3-devices-black.png',
+    technologies: [
+      'Ruby on Rails',
+      'JavaScript',
+    ],
+    liveVersionLink: 'https://mysite-zxr1.onrender.com/',
+    SourceLink: 'https://github.com/tugsem/ecomm',
+    date: '2023',
+    stack: 'Full Stack Dev',
+  },
+  {
     name: 'RoboFriends',
     description: 'An instant searchbox for finding robot friends by name, created using an API.',
     imageSrc: 'https://tugsem.github.io/my-portfolio/assets/work-img/robofriends.png',
