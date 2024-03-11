@@ -21,7 +21,7 @@ const works = [
       'CSS',
       'Javascript'
     ],
-    liveVersionLink: 'stunning-salmiakki-34414f.netlify.app/',
+    liveVersionLink: 'https://stunning-salmiakki-34414f.netlify.app/',
     SourceLink: 'https://github.com/tugsem/robofriends',
     date: '2020',
     stack: 'Front End Dev',

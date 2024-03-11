@@ -25,55 +25,6 @@ const ul = document.createElement('ul');
 ul.className = 'd-flex languages lang-subs';
 skillsDiv.prepend(ul);
 
-const works = [
-  {
-    name: 'Dream Rent',
-    description: 'Dream rent is an appointment booking application, allows users to book an appointment to visit their dream home. This application is built using React in the front-end and the back-end is built using Rails.',
-    imageSrc: './assets/dreamrent.jfif',
-    technologies: [
-      'JavaScript',
-      'Ruby on Rails',
-      'CSS',
-      'HTML',
-    ],
-    liveVersionLink: 'https://dream-rent-irrw.onrender.com',
-    SourceLink: 'https://github.com/tugsem/dream-rent',
-    date: '2022',
-    stack: 'Full Stack Dev',
-  },
-  {
-    name: 'To-Do List',
-    description: 'An SPA created with React Library. User can add, check, delete and edit items.',
-    imageSrc: './assets/reactodo.jfif',
-    technologies: [
-      'JavaScript',
-      'ReactJS',
-      'Redux',
-      'CSS',
-      'HTML',
-    ],
-    liveVersionLink: 'https://tugsem.github.io/react-to-do/',
-    SourceLink: 'https://github.com/tugsem/react-to-do',
-    date: '2022',
-    stack: 'Front End Dev',
-  },
-  {
-    name: 'Space Traveler\'s Hub',
-    description: 'A (SPA) web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join missions.',
-    imageSrc: './assets/spacetravelershub.jfif',
-    technologies: [
-      'JavaScript',
-      'ReactJS',
-      'Redux',
-      'CSS',
-      'HTML',
-    ],
-    liveVersionLink: 'https://dancing-tarsier-912542.netlify.app',
-    SourceLink: 'https://github.com/tugsem/space-travelers-react',
-    date: '2022',
-    stack: 'Front End Dev',
-  },
-];
 
 const generatePopup = (index) => {
   ul.innerText = '';
