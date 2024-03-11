@@ -23,7 +23,8 @@ const generatePopup = (index) => {
   popupTitle.innerText = works[index].name;
   works[index].imageSrc.forEach(src => {
     let img = document.createElement('img');
-    img.src = `url(${src})`;
+    img.src = `${src}`;
+    console.log(img)
     imgContainer.appendChild(img);
   })
   //imgContainer.style.backgroundImage = `url('${works[index].imageSrc}')`;
