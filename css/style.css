@@ -702,17 +702,17 @@ main.active {
 
 .workImg-container {
   overflow-y: scroll;
-  width: 100%;
-  height: 35vh;
+  height: 40vh;
+  background-color: rgb(145, 145, 145);
 }
 
-#popup-img {
+/* #popup-img {
   background-size: cover;
   background-position: center;
   height: inherit;
   background-repeat: no-repeat;
   border-radius: 10px;
-}
+} */
 
 .buttons {
   width: 100%;

@@ -6,7 +6,7 @@ const bodyElement = document.querySelector('body');
 const popup = document.querySelector('.popup-overlay');
 const closePopup = document.querySelector('#close-btn');
 const subDesc = document.querySelector('.sub-desc');
-const workImg = document.querySelector('#popup-img');
+const imgContainer = document.querySelector('.workImg-container');
 const popupTitle = document.querySelector('#work-title');
 const popupContent = document.querySelector('.popup-content');
 const skillsDiv = document.querySelector('.project-info');
@@ -20,8 +20,13 @@ const ul = document.createElement('ul');
 const generatePopup = (index) => {
   ul.className = 'languages d-flex';
   ul.innerText = '';
-  popupTitle.innerText =  works[index].name;
-  workImg.style.backgroundImage = `url('${works[index].imageSrc}')`;
+  popupTitle.innerText = works[index].name;
+  works[index].imageSrc.forEach(src => {
+    let img = document.createElement('img');
+    img.src = `url(${src})`;
+    imgContainer.appendChild(img);
+  })
+  //imgContainer.style.backgroundImage = `url('${works[index].imageSrc}')`;
   workDesc.innerText = works[index].description;
 
   createTechList(ul, works[index].technologies);
@@ -47,6 +52,7 @@ closePopup.addEventListener('click', () => {
   popup.classList.remove('active');
   bodyElement.classList.remove('active');
   popupContent.classList.remove('active');
+  imgContainer.innerText = '';
 });
 
 export default handleDetailBtn;

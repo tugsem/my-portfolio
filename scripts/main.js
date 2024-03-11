@@ -17,7 +17,7 @@ const createSection = () => {
   const section = document.createElement('section');
   section.className = 'work-section';
   section.innerHTML = `
-  <div class="img-work" alt="work image"></div>
+  <div class="img-work"></div>
   <div class="text-wrapper">
   <div class="info"></div>
   <ul class="languages d-flex"></ul>
@@ -47,7 +47,7 @@ const generateWorks = () => {
     const textContainer = section.children[1].children[0];
     const langs = section.children[1].children[1];
     const btn = section.children[1].children[2];
-    const workImage = section.children[0];
+    const workImages = section.children[0];  //selects the div
 
     if (index % 2 === 0) {
       section.className = 'work';
@@ -55,11 +55,15 @@ const generateWorks = () => {
       section.className = 'work right';
     }
     langs.innerText = '';
-    workImage.style.backgroundImage = `url('${imageSrc}')`;
+    workImages.style.backgroundImage = `url('${imageSrc[0]}')`;
+    workImages.style.cursor = 'pointer';
+    [workImages, btn].forEach(function (element) {
+      element.addEventListener('click', function () {
+        handleDetailBtn(index);
+       })
+    })
     generateWorkInfo(textContainer, name, stack, date, description, technologies);
     createTechList(langs, technologies);
-
-    btn.addEventListener('click', () => handleDetailBtn(index));
     workContainer.appendChild(section);
   });
 };
