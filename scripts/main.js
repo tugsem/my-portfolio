@@ -55,11 +55,7 @@ const generateWorks = () => {
       section.className = 'work right';
     }
     langs.innerText = '';
-    const img = document.createElement('img');
-     img.width = "fit-content";
-     img.src = imageSrc[0];
-    //workImages.style.backgroundImage = `url('${imageSrc[0]}')`;
-    workImages.appendChild(img);
+    workImages.style.backgroundImage = `url('${imageSrc[0]}')`;
     workImages.style.cursor = 'pointer';
     [workImages, btn].forEach(function (element) {
       element.addEventListener('click', function () {
