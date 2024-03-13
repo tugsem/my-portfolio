@@ -1,4 +1,3 @@
-
 :root {
   /* Light Mode */
   --bg-color: #f7f7f9;
@@ -13,8 +12,8 @@
 }
 
 * {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -54,6 +53,9 @@ body {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
 header {
   position: fixed;
   background-color: var(--soft-purple);
@@ -194,7 +196,7 @@ header {
   position: fixed;
   bottom: 20px;
   right: 10px;
-  z-index: 99;
+  z-index: 4;
   width: 40px;
   height: 40px;
   background-color: var(--soft-purple);
@@ -264,13 +266,12 @@ header {
 
 .img-work {
   border-radius: 8px;
-  width: 100%;
-  height: 300px;
   background-position: top;
   background-size: cover;
+  height: 300px;
   background-repeat: no-repeat;
-  margin: 6px 0;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
+  outline: 5px solid var(--main-purple);
 }
 
 .img-work:hover {
@@ -282,7 +283,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding-bottom: 12px;
+  padding: 0 20px 12px;
   gap: 8px;
   font-weight: 600;
   font-size: 13px;
@@ -636,23 +637,25 @@ main.active {
 
 .popup-overlay {
   width: 100%;
-  height: 100%;
-  z-index: 4;
+  height: 100vh;
+  z-index: 6;
   background-color: #5765e0f1;
   position: fixed;
+  cursor: default;
   top: 0;
-  overflow-y: hidden;
   display: none;
 }
 
 .popup-content {
   background-color: var(--bg-color);
+  overflow-y: scroll;
   cursor: default;
   width: 80%;
-  z-index: 5;
-  padding: 18px 16px 30px;
+  height: 90vh;
+  z-index: 6;
+  padding: 18px 16px 0;
   border-radius: 10px;
-  margin: 40px auto;
+  margin: 5vh auto;
   color: var(--text);
 }
 
@@ -672,7 +675,8 @@ main.active {
 
 #popup-title {
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  padding: 0 0 0 20px;
   align-items: center;
 }
 
@@ -695,29 +699,26 @@ main.active {
 
 #popup-description {
   font-size: 15px;
-  padding: 15px 0;
-  height: 150px;
+  margin: 15px 0;
+  height: 100px;
   overflow-y: scroll;
 }
 
 .workImg-container {
+  width: 100%;
+  min-height: 40%;
+  display: flex;
+  justify-content:  center;
+  position: relative;
+  margin: auto;
   overflow-y: scroll;
-  height: 40vh;
-  background-color: rgb(145, 145, 145);
+  border-radius: 8px;
 }
-
-/* #popup-img {
-  background-size: cover;
-  background-position: center;
-  height: inherit;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-} */
 
 .buttons {
   width: 100%;
   justify-content: center;
-  padding-top: 15px;
+  padding: 15px;
   gap: 10px;
 }
 

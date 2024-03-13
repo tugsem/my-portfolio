@@ -24,12 +24,9 @@ const generatePopup = (index) => {
   works[index].imageSrc.forEach(src => {
     let img = document.createElement('img');
     img.src = `${src}`;
-    console.log(img)
     imgContainer.appendChild(img);
   })
-  //imgContainer.style.backgroundImage = `url('${works[index].imageSrc}')`;
   workDesc.innerText = works[index].description;
-
   createTechList(ul, works[index].technologies);
   skillsDiv.prepend(ul);
 
@@ -39,6 +36,7 @@ const generatePopup = (index) => {
   `;
   liveBtn.href = works[index].liveVersionLink;
   sourceBtn.href = works[index].SourceLink;
+
 };
 
 const handleDetailBtn = (index) => {
@@ -47,6 +45,7 @@ const handleDetailBtn = (index) => {
   popupContent.classList.add('active');
   upArrow.style.display='none';
   generatePopup(index);
+
 };
 
 closePopup.addEventListener('click', () => {
@@ -55,5 +54,7 @@ closePopup.addEventListener('click', () => {
   popupContent.classList.remove('active');
   imgContainer.innerText = '';
 });
+
+
 
 export default handleDetailBtn;
