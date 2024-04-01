@@ -8,7 +8,7 @@ const works = [
       'JavaScript',
     ],
     liveVersionLink: 'https://mysite-zxr1.onrender.com/',
-    SourceLink: 'https://github.com/tugsem/ecomm',
+    SourceLink: 'https://github.com/tugsem/ecomm-rails',
     date: '2023',
     stack: 'Full Stack Dev',
   },
