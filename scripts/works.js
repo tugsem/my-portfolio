@@ -78,7 +78,7 @@ const works = [
       'CSS',
       'HTML',
     ],
-    liveVersionLink: 'https://main.d3dcuht188qbz2.amplifyapp.com',
+    liveVersionLink: 'https://air-pollution-production.up.railway.app/',
     SourceLink: 'https://github.com/tugsem/air-pollution',
     date: '2022',
     stack: 'Front End Dev',
