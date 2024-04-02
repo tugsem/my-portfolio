@@ -11,6 +11,7 @@
     transform: scale(1.5, 1.5);
     /* top: -100px;
     right: -100px; */
+    z-index: 0;
   }
 
   #first-title {
