@@ -42,7 +42,7 @@ const works = [
   {
     name: 'Losangeles Mountains',
     description: 'Explore the rich history of the Los Angeles mountains and stay updated on upcoming climbing schedules with our dedicated website.',
-    imageSrc: ['https://tugsem.github.io/my-portfolio/assets/work-img/ladesktop.png','https://tugsem.github.io/my-portfolio/assets/work-img/lamobile.png','https://tugsem.github.io/my-portfolio/assets/work-img/la.png'],
+    imageSrc: ['https://tugsem.github.io/my-portfolio/assets/work-img/ladesktop.png','https://tugsem.github.io/my-portfolio/assets/work-img/la.png'],
     technologies: [
       'JavaScript',
       'CSS',
@@ -71,7 +71,7 @@ const works = [
   {
     name: 'Air Pollution App',
     description: 'A (SPA) web application created with Air Pollution Api, users can check levels of the cities, filter them via dropdown menu and see the details per city on the new page.',
-    imageSrc: ['https://tugsem.github.io/my-portfolio/assets/work-img/airPollution.jpg'],
+    imageSrc: ['https://tugsem.github.io/my-portfolio/assets/work-img/laptop.png', 'https://tugsem.github.io/my-portfolio/assets/work-img/mobile-black.png'],
     technologies: [
       'JavaScript',
       'React/Redux',
