@@ -99,8 +99,8 @@ const works = [
   },
   {
     name: 'Space Traveler\'s Hub',
-    description: 'A (SPA) web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join missions.',
-    imageSrc: ['https://tugsem.github.io/my-portfolio/assets/work-img/spaceTravelers.png'],
+    description: 'A (SPA) web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join missions.The UI is currently developing. Check live version to see it :)',
+    imageSrc: [],
     technologies: [
       'JavaScript',
       'React/Redux',
