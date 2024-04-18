@@ -107,7 +107,7 @@ const works = [
       'CSS',
       'HTML',
     ],
-    liveVersionLink: 'https://dancing-tarsier-912542.netlify.app',
+    liveVersionLink: 'https://space-travelers-react-production.up.railway.app/',
     SourceLink: 'https://github.com/tugsem/space-travelers-react',
     date: '2022',
     stack: 'Front End Dev',
