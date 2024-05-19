@@ -167,7 +167,6 @@
   }
 
   .white {
-    width: 140px;
     height: 48px;
     overflow: hidden;
     margin: 0;
@@ -257,17 +256,6 @@
     bottom: 0;
     right: 68px;
   }
-}
-
-@media screen and (min-width: 1920px) {
-  .main-description {
-    width: 80%;
-  }
-
-  #first-title {
-    width: 100%;
-    font-size: 4rem;
-  }
 
   .about-me {
     width: 100%;
@@ -276,8 +264,16 @@
     align-items: center;
     padding: 10%;
   }
-
   .left-side {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .main-description {
+    width: 80%;
+  }
+  .about-illustration {
+    height: 500px;
   }
 }
