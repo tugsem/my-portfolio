@@ -1,24 +1,25 @@
 @media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
   .main-wrapper {
     padding: 200px 160px 130px 200px;
   }
 
   .main {
     width: 100%;
+    padding: 100px 0 0 0;
   }
 
   #circle {
     transform: scale(1.5, 1.5);
-    /* top: -100px;
-    right: -100px; */
     z-index: 0;
   }
 
   #first-title {
-    font-size: 48px;
-    line-height: 60px;
     letter-spacing: 0.37px;
-    width: 430px;
+    width: 50%;
   }
 
   header {
@@ -98,8 +99,7 @@
   }
 
   .work-title {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 3rem;
   }
 
   .sub-desc {
@@ -259,13 +259,14 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .main {
-    padding: 200px 200px 130px 200px;
+@media screen and (min-width: 1920px) {
+  .main-description {
+    width: 80%;
   }
 
   #first-title {
     width: 100%;
+    font-size: 4rem;
   }
 
   .about-me {

@@ -56,6 +56,7 @@ body {
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 header {
   position: fixed;
   background-color: var(--soft-purple);
@@ -68,7 +69,6 @@ header {
 
 .nav-number {
   color: var(--nav-number);
-  font-size: 16px;
   font-weight: 600;
 }
 
@@ -94,15 +94,14 @@ header {
   width: 100%;
   float: left;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 3rem;
+  line-height: 3.5rem;
   animation: heading 2s 1 alternate;
   z-index: 2;
 }
 
 .main-description {
   font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   margin: 12px 0;
   width: 100%;
@@ -144,7 +143,7 @@ header {
 .main {
   position: relative;
   flex-direction: column;
-  padding: 100px 0 0 0;
+  padding: 300px 0 0 0;
   z-index: 2;
 }
 
@@ -157,7 +156,6 @@ header {
   padding: 5px 10px;
   left: 0;
   z-index: 3;
-  font-size: 0.8rem;
 }
 
 .stack::before,
@@ -217,7 +215,7 @@ header {
 }
 
 #copyright {
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 .footer-icons {
@@ -264,6 +262,11 @@ header {
   margin-bottom: 114px;
 }
 
+.work-title {
+  line-height: 3rem;
+  padding-top: 10px;
+}
+
 .img-work {
   border-radius: 8px;
   background-position: top;
@@ -283,18 +286,16 @@ header {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  padding: 0 20px 12px;
+  padding: 0 12px;
   gap: 8px;
   font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.9rem;
   color: var(--dark-grey);
 }
 
 .description {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  line-height: 1.5rem;
   width: 100%;
   height: 100px;
   overflow-y: scroll;
@@ -312,7 +313,7 @@ header {
 .lang {
   color: var(--text);
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8rem;
   padding: 4px 12px;
   align-items: center;
   background-color: var(--soft-purple);
@@ -329,8 +330,7 @@ header {
   border: 1px solid var(--main-purple);
   background-color: transparent;
   border-radius: 5px;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.2rem;
   letter-spacing: 0.03em;
   margin-top: 30px;
   width: fit-content;
@@ -345,8 +345,6 @@ header {
 .brand {
   color: var(--text);
   font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 /* About Section */
@@ -485,8 +483,7 @@ textarea {
 }
 
 #contact-me-title {
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -494,9 +491,9 @@ textarea {
 #cont-desc {
   margin-bottom: 50px;
   width: 100%;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.8rem;
 }
 
 .txt {
@@ -601,7 +598,7 @@ header.active {
 
 .mobile-menu > li > a {
   color: #fff;
-  font-size: 32px;
+  font-size: 2rem;
   text-decoration: none;
 }
 
@@ -675,6 +672,7 @@ main.active {
 
 #popup-title {
   width: 100%;
+
   /* justify-content: space-between; */
   padding: 0 0 0 20px;
   align-items: center;
@@ -687,18 +685,11 @@ main.active {
 
 #close-btn {
   cursor: pointer;
-  font-size: 35px;
+  font-size: 2rem;
   margin-right: 10px;
 }
 
-.popup-content h2 {
-  font-size: 32px;
-  margin: 0;
-  width: 70%;
-}
-
 #popup-description {
-  font-size: 15px;
   margin: 15px 0;
   height: 100px;
   overflow-y: scroll;
@@ -708,7 +699,7 @@ main.active {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:  center;
+  justify-content: center;
   position: relative;
   margin: auto;
   overflow-y: scroll;
@@ -725,7 +716,6 @@ main.active {
 #live-btn,
 #source-btn {
   text-decoration: none;
-  font-size: 15px;
   color: var(--main-purple);
   padding: 12px;
   border-radius: 8px;
@@ -750,7 +740,6 @@ main.active {
 /* Pupup menu end */
 
 .error {
-  font-size: 15px;
   color: #9d0208;
   font-weight: 600;
   margin-top: 5px;
