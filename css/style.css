@@ -125,7 +125,7 @@ header {
 }
 
 #main-illustration {
-  transform: scale(-1, 1);
+  transform: scale(1, 1);
   position: relative;
   opacity: 1;
   width: 300px;
