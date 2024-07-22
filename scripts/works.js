@@ -7,7 +7,7 @@ const works = [
       'Ruby on Rails',
       'JavaScript',
     ],
-    liveVersionLink: 'https://mysite-zxr1.onrender.com/',
+    liveVersionLink: 'https://ecomm-rails-production.up.railway.app/',
     SourceLink: 'https://github.com/tugsem/ecomm-rails',
     date: '2023',
     stack: 'Full Stack Dev',
